@@ -1,0 +1,257 @@
+{
+    "system": {
+        "folders": [
+            ".mvn",
+            "charts",
+            "src"
+        ],
+        "dependencies": [
+            "spring-boot-starter-actuator",
+            "spring-boot-starter-web",
+            "lombok",
+            "spring-cloud-kubernetes-fabric8-leader",
+            "spring-boot-starter-test"
+        ],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\pom.xml",
+            "G:\\AntiPattern_Detection\\projects\\k8s-leader-election-main\\.mvn\\wrapper\\maven-wrapper.properties",
+            "G:\\AntiPattern_Detection\\projects\\k8s-leader-election-main\\charts\\Chart.yaml",
+            "G:\\AntiPattern_Detection\\projects\\k8s-leader-election-main\\charts\\values.yaml",
+            "G:\\AntiPattern_Detection\\projects\\k8s-leader-election-main\\charts\\templates\\deployment.yaml",
+            "G:\\AntiPattern_Detection\\projects\\k8s-leader-election-main\\charts\\templates\\role.yml",
+            "G:\\AntiPattern_Detection\\projects\\k8s-leader-election-main\\charts\\templates\\rolebinding.yaml",
+            "G:\\AntiPattern_Detection\\projects\\k8s-leader-election-main\\charts\\templates\\service.yaml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "18",
+                "locs": "606",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-boot-starter-web",
+                    "lombok",
+                    "spring-cloud-kubernetes-fabric8-leader",
+                    "spring-boot-starter-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "K8sLeaderElectionApplication",
+                            "src.main.io.mseemann.poc.k8sleaderelection.K8sLeaderElectionApplication"
+                        ],
+                        [
+                            "LeaderInfo",
+                            "src.main.io.mseemann.poc.k8sleaderelection.LeaderInfo"
+                        ],
+                        [
+                            "SingletonService",
+                            "src.main.io.mseemann.poc.k8sleaderelection.SingletonService"
+                        ],
+                        [
+                            "K8sLeaderElectionApplicationTests",
+                            "src.test.io.mseemann.poc.k8sleaderelection.K8sLeaderElectionApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\K8sLeaderElectionApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\K8sLeaderElectionApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java/lombok.AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java/org.springframework.web.bind.annotation.GetMapping",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/lombok.extern.slf4j.Slf4j",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/org.springframework.context.event.EventListener",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/org.springframework.integration.leader.event.OnGrantedEvent",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/org.springframework.integration.leader.event.OnRevokedEvent",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/org.springframework.stereotype.Component"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\K8sLeaderElectionApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java/RestController",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java/AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java/GetMapping",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/Slf4j",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/Component",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/EventListener"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\K8sLeaderElectionApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java/areYouTheLeader",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/onLeadershipGained",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/onLeadershipLost",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java/isLeader"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "singletonService",
+                            "type": "SingletonService"
+                        },
+                        {
+                            "name": "leader",
+                            "type": "boolean"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "event",
+                            "type": "OnGrantedEvent"
+                        },
+                        {
+                            "name": "event",
+                            "type": "OnRevokedEvent"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\mvnw",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\README.md",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\.mvn\\wrapper\\maven-wrapper.jar",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\.mvn\\wrapper\\maven-wrapper.properties",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\Chart.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\values.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\deployment.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\role.yml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\rolebinding.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\service.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\K8sLeaderElectionApplication.java",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\SingletonService.java",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\resources\\application.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\test\\java\\io\\mseemann\\poc\\k8sleaderelection\\K8sLeaderElectionApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 1,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\java\\io\\mseemann\\poc\\k8sleaderelection\\LeaderInfo.java",
+                                "line": 13,
+                                "method": "GET",
+                                "code": "@GetMapping(\"/are-you-the-leader\")"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "K8sLeaderElectionApplication.java",
+                                "className": "K8sLeaderElectionApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "LeaderInfo.java",
+                                "className": "LeaderInfo",
+                                "methodName": "areYouTheLeader",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "SingletonService.java",
+                                "className": "SingletonService",
+                                "methodName": "onLeadershipGained",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SingletonService.java",
+                                "className": "SingletonService",
+                                "methodName": "onLeadershipLost",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "K8sLeaderElectionApplicationTests.java",
+                                "className": "K8sLeaderElectionApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "K8sLeaderElectionApplication.java",
+                                "className": "K8sLeaderElectionApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "SingletonService.java",
+                                "className": "SingletonService",
+                                "methodName": "onLeadershipGained",
+                                "param_types": [
+                                    "OnGrantedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "SingletonService.java",
+                                "className": "SingletonService",
+                                "methodName": "onLeadershipLost",
+                                "param_types": [
+                                    "OnRevokedEvent"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\role.yml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\Chart.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\values.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\deployment.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\rolebinding.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\charts\\templates\\service.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\src\\main\\resources\\application.yaml",
+                        "G:/AntiPattern_Detection/projects/k8s-leader-election-main\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": [
+            "src"
+        ]
+    }
+}

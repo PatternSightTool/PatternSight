@@ -1,0 +1,2181 @@
+{
+    "system": {
+        "folders": [
+            "app-camel-command",
+            "app-camel-query",
+            "camel-mongodb-app",
+            "content-based-router",
+            "examples",
+            "examples-code",
+            "multicast",
+            "spring-camel-kafka-schema-registry"
+        ],
+        "dependencies": [],
+        "language": "",
+        "config_files": [],
+        "http": [],
+        "microservices": [
+            {
+                "name": "app-camel-command",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "15",
+                "locs": "606",
+                "dependencies": [
+                    "spring-boot-dependencies",
+                    "camel-spring-boot-dependencies",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-undertow",
+                    "spring-boot-starter-actuator",
+                    "camel-jaxb-starter",
+                    "camel-spring-boot-starter",
+                    "camel-jackson-starter",
+                    "camel-stream-starter",
+                    "camel-servlet",
+                    "camel-jackson",
+                    "camel-mongodb",
+                    "camel-mongodb-starter",
+                    "camel-jackson-avro-starter",
+                    "camel-kafka-starter",
+                    "avro",
+                    "spring-boot-starter-test",
+                    "camel-test-spring-junit5"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "app-camel-command",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CamelSpringBootApplication",
+                            "src.main.org.camel.app.CamelSpringBootApplication"
+                        ],
+                        [
+                            "CustomKafkaConfiguration",
+                            "src.main.org.camel.app.config.CustomKafkaConfiguration"
+                        ],
+                        [
+                            "MongoDBConfig",
+                            "src.main.org.camel.app.config.MongoDBConfig"
+                        ],
+                        [
+                            "RestConfigRouter",
+                            "src.main.org.camel.app.config.RestConfigRouter"
+                        ],
+                        [
+                            "SchemaRegistryKafkaConfiguration",
+                            "src.main.org.camel.app.config.SchemaRegistryKafkaConfiguration"
+                        ],
+                        [
+                            "Movie",
+                            "src.main.org.camel.app.model.Movie"
+                        ],
+                        [
+                            "KafkaInternalRouter",
+                            "src.main.org.camel.app.router.internal.KafkaInternalRouter"
+                        ],
+                        [
+                            "MongoDBInternalRouter",
+                            "src.main.org.camel.app.router.internal.MongoDBInternalRouter"
+                        ],
+                        [
+                            "MovieInternalRouter",
+                            "src.main.org.camel.app.router.internal.MovieInternalRouter"
+                        ],
+                        [
+                            "MovieRestRouter",
+                            "src.main.org.camel.app.router.rest.MovieRestRouter"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.apache.camel.component.kafka.KafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.apache.kafka.common.serialization.StringDeserializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.apache.kafka.common.serialization.StringSerializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.MongoClientSettings",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.MongoCredential",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.ServerAddress",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.client.MongoClient",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.client.MongoClients",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/java.util.Arrays",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.apache.camel.component.servlet.CamelHttpTransportServlet",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.apache.camel.model.rest.RestBindingMode",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.springframework.boot.web.servlet.ServletRegistrationBean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.camel.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.camel.component.kafka.KafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.kafka.clients.producer.internals.DefaultPartitioner",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.kafka.common.serialization.StringDeserializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.kafka.common.serialization.StringSerializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/java.util.Properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.apache.camel.component.kafka.KafkaComponent",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.camel.app.config.CustomKafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/org.camel.app.model.Movie",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/org.springframework.http.MediaType",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/org.springframework.stereotype.Component"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/kafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/mongoClient",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/servletRegistrationBean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/createProducerProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/createConsumerProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/getProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/getName",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/setName",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/getGender",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/setGender",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/configure"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "host",
+                            "type": "String"
+                        },
+                        {
+                            "name": "port",
+                            "type": "String"
+                        },
+                        {
+                            "name": "database",
+                            "type": "String"
+                        },
+                        {
+                            "name": "username",
+                            "type": "String"
+                        },
+                        {
+                            "name": "password",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        },
+                        {
+                            "name": "camelContext",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "autoStartup",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "configuration",
+                            "type": "SchemaRegistryKafkaConfiguration"
+                        },
+                        {
+                            "name": "credential",
+                            "type": "MongoCredential"
+                        },
+                        {
+                            "name": "serverAddress",
+                            "type": "ServerAddress"
+                        },
+                        {
+                            "name": "settings",
+                            "type": "MongoClientSettings"
+                        },
+                        {
+                            "name": "registration",
+                            "type": "ServletRegistrationBean"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "var"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "var"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "Properties"
+                        },
+                        {
+                            "name": "configuration",
+                            "type": "var"
+                        },
+                        {
+                            "name": "kafka",
+                            "type": "KafkaComponent"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\configuration\\mongo.yml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\model\\Movie.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\resources\\META-INF\\LICENSE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\resources\\META-INF\\NOTICE.txt"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CustomKafkaConfiguration.java",
+                                "className": "CustomKafkaConfiguration",
+                                "methodName": "kafkaConfiguration",
+                                "returnType": "KafkaConfiguration"
+                            },
+                            {
+                                "fileName": "MongoDBConfig.java",
+                                "className": "MongoDBConfig",
+                                "methodName": "mongoClient",
+                                "returnType": "MongoClient"
+                            },
+                            {
+                                "fileName": "RestConfigRouter.java",
+                                "className": "RestConfigRouter",
+                                "methodName": "servletRegistrationBean",
+                                "returnType": "ServletRegistrationBean"
+                            },
+                            {
+                                "fileName": "RestConfigRouter.java",
+                                "className": "RestConfigRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createProducerProperties",
+                                "returnType": "Properties"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createConsumerProperties",
+                                "returnType": "Properties"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "getProperties",
+                                "returnType": "Properties"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "getGender",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setGender",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "KafkaInternalRouter.java",
+                                "className": "KafkaInternalRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MongoDBInternalRouter.java",
+                                "className": "MongoDBInternalRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MovieInternalRouter.java",
+                                "className": "MovieInternalRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MovieRestRouter.java",
+                                "className": "MovieRestRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setGender",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "CustomKafkaConfiguration.java",
+                                "className": "CustomKafkaConfiguration",
+                                "methodName": "kafkaConfiguration",
+                                "local_types": [
+                                    "SchemaRegistryKafkaConfiguration"
+                                ]
+                            },
+                            {
+                                "fileName": "MongoDBConfig.java",
+                                "className": "MongoDBConfig",
+                                "methodName": "mongoClient",
+                                "local_types": [
+                                    "MongoCredential",
+                                    "ServerAddress",
+                                    "MongoClientSettings"
+                                ]
+                            },
+                            {
+                                "fileName": "RestConfigRouter.java",
+                                "className": "RestConfigRouter",
+                                "methodName": "servletRegistrationBean",
+                                "local_types": [
+                                    "ServletRegistrationBean"
+                                ]
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createProducerProperties",
+                                "local_types": [
+                                    "var"
+                                ]
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createConsumerProperties",
+                                "local_types": [
+                                    "var"
+                                ]
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "getProperties",
+                                "local_types": [
+                                    "Properties"
+                                ]
+                            },
+                            {
+                                "fileName": "KafkaInternalRouter.java",
+                                "className": "KafkaInternalRouter",
+                                "methodName": "configure",
+                                "local_types": [
+                                    "var",
+                                    "KafkaComponent"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\configuration\\mongo.yml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-command\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "app-camel-query",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "21",
+                "locs": "807",
+                "dependencies": [
+                    "spring-boot-dependencies",
+                    "camel-spring-boot-dependencies",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-undertow",
+                    "spring-boot-starter-actuator",
+                    "camel-jaxb-starter",
+                    "camel-spring-boot-starter",
+                    "camel-jackson-starter",
+                    "camel-stream-starter",
+                    "camel-servlet",
+                    "camel-jackson",
+                    "camel-mongodb",
+                    "camel-mongodb-starter",
+                    "camel-jackson-avro-starter",
+                    "camel-kafka-starter",
+                    "avro",
+                    "spring-boot-starter-test",
+                    "camel-test-spring-junit5"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "app-camel-query",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CamelSpringBootApplication",
+                            "src.main.org.camel.app.CamelSpringBootApplication"
+                        ],
+                        [
+                            "MovieBean",
+                            "src.main.org.camel.app.bean.MovieBean"
+                        ],
+                        [
+                            "CustomKafkaConfiguration",
+                            "src.main.org.camel.app.config.CustomKafkaConfiguration"
+                        ],
+                        [
+                            "MongoDBConfig",
+                            "src.main.org.camel.app.config.MongoDBConfig"
+                        ],
+                        [
+                            "RestConfigRouter",
+                            "src.main.org.camel.app.config.RestConfigRouter"
+                        ],
+                        [
+                            "SchemaRegistryKafkaConfiguration",
+                            "src.main.org.camel.app.config.SchemaRegistryKafkaConfiguration"
+                        ],
+                        [
+                            "Movie",
+                            "src.main.org.camel.app.model.Movie"
+                        ],
+                        [
+                            "KafkaInternalRouter",
+                            "src.main.org.camel.app.router.internal.KafkaInternalRouter"
+                        ],
+                        [
+                            "MongoDBInternalRouter",
+                            "src.main.org.camel.app.router.internal.MongoDBInternalRouter"
+                        ],
+                        [
+                            "MovieInternalRouter",
+                            "src.main.org.camel.app.router.internal.MovieInternalRouter"
+                        ],
+                        [
+                            "MovieRestRouter",
+                            "src.main.org.camel.app.router.rest.MovieRestRouter"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java/com.mongodb.client.model.Filters",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java/org.apache.camel.Exchange",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java/org.apache.camel.component.mongodb.MongoDbConstants",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.apache.camel.component.kafka.KafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.apache.kafka.common.serialization.StringDeserializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.apache.kafka.common.serialization.StringSerializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.MongoClientSettings",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.MongoCredential",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.ServerAddress",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.client.MongoClient",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/com.mongodb.client.MongoClients",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/java.util.Arrays",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.apache.camel.component.servlet.CamelHttpTransportServlet",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.apache.camel.model.rest.RestBindingMode",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.springframework.boot.web.servlet.ServletRegistrationBean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.camel.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.camel.component.kafka.KafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.kafka.clients.producer.internals.DefaultPartitioner",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.kafka.common.serialization.StringDeserializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/org.apache.kafka.common.serialization.StringSerializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/java.util.Properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.apache.camel.component.kafka.KafkaComponent",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.camel.app.config.CustomKafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/org.camel.app.bean.MovieBean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/org.springframework.http.MediaType",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/org.springframework.stereotype.Component"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java/getMovies",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java/queryByGender",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java/kafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java/mongoClient",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/servletRegistrationBean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/createProducerProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/createConsumerProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java/getProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/getName",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/setName",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/getGender",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\model\\Movie.java/setGender",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java/configure"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "host",
+                            "type": "String"
+                        },
+                        {
+                            "name": "port",
+                            "type": "String"
+                        },
+                        {
+                            "name": "database",
+                            "type": "String"
+                        },
+                        {
+                            "name": "username",
+                            "type": "String"
+                        },
+                        {
+                            "name": "password",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        },
+                        {
+                            "name": "camelContext",
+                            "type": "CamelContext"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "configuration",
+                            "type": "SchemaRegistryKafkaConfiguration"
+                        },
+                        {
+                            "name": "credential",
+                            "type": "MongoCredential"
+                        },
+                        {
+                            "name": "serverAddress",
+                            "type": "ServerAddress"
+                        },
+                        {
+                            "name": "settings",
+                            "type": "MongoClientSettings"
+                        },
+                        {
+                            "name": "registration",
+                            "type": "ServletRegistrationBean"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "var"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "var"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "Properties"
+                        },
+                        {
+                            "name": "configuration",
+                            "type": "var"
+                        },
+                        {
+                            "name": "kafka",
+                            "type": "KafkaComponent"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\.idea\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\.idea\\compiler.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\.idea\\encodings.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\.idea\\jarRepositories.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\.idea\\misc.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\.idea\\uiDesigner.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\.idea\\vcs.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\CamelSpringBootApplication.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\bean\\MovieBean.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\CustomKafkaConfiguration.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\MongoDBConfig.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\RestConfigRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\config\\SchemaRegistryKafkaConfiguration.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\model\\Movie.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\KafkaInternalRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MongoDBInternalRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\internal\\MovieInternalRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\java\\org\\camel\\app\\router\\rest\\MovieRestRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\resources\\META-INF\\LICENSE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\resources\\META-INF\\NOTICE.txt"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MovieBean.java",
+                                "className": "MovieBean",
+                                "methodName": "getMovies",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MovieBean.java",
+                                "className": "MovieBean",
+                                "methodName": "queryByGender",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CustomKafkaConfiguration.java",
+                                "className": "CustomKafkaConfiguration",
+                                "methodName": "kafkaConfiguration",
+                                "returnType": "KafkaConfiguration"
+                            },
+                            {
+                                "fileName": "MongoDBConfig.java",
+                                "className": "MongoDBConfig",
+                                "methodName": "mongoClient",
+                                "returnType": "MongoClient"
+                            },
+                            {
+                                "fileName": "RestConfigRouter.java",
+                                "className": "RestConfigRouter",
+                                "methodName": "servletRegistrationBean",
+                                "returnType": "ServletRegistrationBean"
+                            },
+                            {
+                                "fileName": "RestConfigRouter.java",
+                                "className": "RestConfigRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createProducerProperties",
+                                "returnType": "Properties"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createConsumerProperties",
+                                "returnType": "Properties"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "getProperties",
+                                "returnType": "Properties"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "getGender",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setGender",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "KafkaInternalRouter.java",
+                                "className": "KafkaInternalRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MongoDBInternalRouter.java",
+                                "className": "MongoDBInternalRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MovieInternalRouter.java",
+                                "className": "MovieInternalRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MovieRestRouter.java",
+                                "className": "MovieRestRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "MovieBean.java",
+                                "className": "MovieBean",
+                                "methodName": "getMovies",
+                                "param_types": [
+                                    "Exchange"
+                                ]
+                            },
+                            {
+                                "fileName": "MovieBean.java",
+                                "className": "MovieBean",
+                                "methodName": "queryByGender",
+                                "param_types": [
+                                    "Exchange"
+                                ]
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setGender",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "CustomKafkaConfiguration.java",
+                                "className": "CustomKafkaConfiguration",
+                                "methodName": "kafkaConfiguration",
+                                "local_types": [
+                                    "SchemaRegistryKafkaConfiguration"
+                                ]
+                            },
+                            {
+                                "fileName": "MongoDBConfig.java",
+                                "className": "MongoDBConfig",
+                                "methodName": "mongoClient",
+                                "local_types": [
+                                    "MongoCredential",
+                                    "ServerAddress",
+                                    "MongoClientSettings"
+                                ]
+                            },
+                            {
+                                "fileName": "RestConfigRouter.java",
+                                "className": "RestConfigRouter",
+                                "methodName": "servletRegistrationBean",
+                                "local_types": [
+                                    "ServletRegistrationBean"
+                                ]
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createProducerProperties",
+                                "local_types": [
+                                    "var"
+                                ]
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "createConsumerProperties",
+                                "local_types": [
+                                    "var"
+                                ]
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "getProperties",
+                                "local_types": [
+                                    "Properties"
+                                ]
+                            },
+                            {
+                                "fileName": "KafkaInternalRouter.java",
+                                "className": "KafkaInternalRouter",
+                                "methodName": "configure",
+                                "local_types": [
+                                    "var",
+                                    "KafkaComponent"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/app-camel-query\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "camel-mongodb-app",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "17",
+                "locs": "611",
+                "dependencies": [
+                    "spring-boot-dependencies",
+                    "camel-spring-boot-dependencies",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-undertow",
+                    "spring-boot-starter-actuator",
+                    "camel-mongodb",
+                    "camel-mongodb-starter",
+                    "camel-jackson-starter",
+                    "camel-spring-boot-starter",
+                    "camel-stream-starter",
+                    "spring-boot-starter-test",
+                    "camel-test-spring-junit5"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "camel-mongodb-app",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CamelSpringBootApplication",
+                            "src.main.tech.kubbee.camel_mongodb_app.CamelSpringBootApplication"
+                        ],
+                        [
+                            "MovieBean",
+                            "src.main.tech.kubbee.camel_mongodb_app.bean.MovieBean"
+                        ],
+                        [
+                            "MongoDBConfiguration",
+                            "src.main.tech.kubbee.camel_mongodb_app.config.MongoDBConfiguration"
+                        ],
+                        [
+                            "Movie",
+                            "src.main.tech.kubbee.camel_mongodb_app.model.Movie"
+                        ],
+                        [
+                            "BaseRouter",
+                            "src.main.tech.kubbee.camel_mongodb_app.route.internal.BaseRouter"
+                        ],
+                        [
+                            "MongoDBInternalRouter",
+                            "src.main.tech.kubbee.camel_mongodb_app.route.internal.MongoDBInternalRouter"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\CamelSpringBootApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\CamelSpringBootApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\bean\\MovieBean.java/org.apache.camel.Exchange",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\bean\\MovieBean.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\bean\\MovieBean.java/tech.kubbee.camel_mongodb_app.model.Movie",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/com.mongodb.ConnectionString",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/com.mongodb.MongoClientSettings",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/com.mongodb.MongoCredential",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/com.mongodb.ServerAddress",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/com.mongodb.client.MongoClient",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/com.mongodb.client.MongoClients",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/java.util.Arrays",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/org.apache.camel.model.dataformat.JsonLibrary",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/tech.kubbee.camel_mongodb_app.bean.MovieBean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/tech.kubbee.camel_mongodb_app.model.Movie",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\MongoDBInternalRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\MongoDBInternalRouter.java/org.springframework.stereotype.Component"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\CamelSpringBootApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\bean\\MovieBean.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\MongoDBInternalRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\MongoDBInternalRouter.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\CamelSpringBootApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\bean\\MovieBean.java/getMovie",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java/mongoClient",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\model\\Movie.java/getName",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\model\\Movie.java/setName",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\model\\Movie.java/getGender",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\model\\Movie.java/setGender",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\MongoDBInternalRouter.java/configure"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "host",
+                            "type": "String"
+                        },
+                        {
+                            "name": "port",
+                            "type": "String"
+                        },
+                        {
+                            "name": "database",
+                            "type": "String"
+                        },
+                        {
+                            "name": "username",
+                            "type": "String"
+                        },
+                        {
+                            "name": "passwrod",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "m",
+                            "type": "Movie"
+                        },
+                        {
+                            "name": "credential",
+                            "type": "MongoCredential"
+                        },
+                        {
+                            "name": "serverAddress",
+                            "type": "ServerAddress"
+                        },
+                        {
+                            "name": "settings",
+                            "type": "MongoClientSettings"
+                        },
+                        {
+                            "name": "connection",
+                            "type": "String"
+                        },
+                        {
+                            "name": "json",
+                            "type": "String"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.idea\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.idea\\compiler.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.idea\\encodings.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.idea\\jarRepositories.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.idea\\misc.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.idea\\uiDesigner.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\.idea\\vcs.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\configuration\\docker-compose\\mongodb.yaml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\CamelSpringBootApplication.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\bean\\MovieBean.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\config\\MongoDBConfiguration.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\model\\Movie.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\BaseRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\java\\tech\\kubbee\\camel_mongodb_app\\route\\internal\\MongoDBInternalRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\resources\\META-INF\\LICENSE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\resources\\META-INF\\NOTICE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\test\\resources\\application.properties"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MovieBean.java",
+                                "className": "MovieBean",
+                                "methodName": "getMovie",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MongoDBConfiguration.java",
+                                "className": "MongoDBConfiguration",
+                                "methodName": "mongoClient",
+                                "returnType": "MongoClient"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "getGender",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setGender",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "BaseRouter.java",
+                                "className": "BaseRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MongoDBInternalRouter.java",
+                                "className": "MongoDBInternalRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "MovieBean.java",
+                                "className": "MovieBean",
+                                "methodName": "getMovie",
+                                "param_types": [
+                                    "Exchange"
+                                ]
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "Movie.java",
+                                "className": "Movie",
+                                "methodName": "setGender",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "MovieBean.java",
+                                "className": "MovieBean",
+                                "methodName": "getMovie",
+                                "local_types": [
+                                    "Movie"
+                                ]
+                            },
+                            {
+                                "fileName": "MongoDBConfiguration.java",
+                                "className": "MongoDBConfiguration",
+                                "methodName": "mongoClient",
+                                "local_types": [
+                                    "MongoCredential",
+                                    "ServerAddress",
+                                    "MongoClientSettings"
+                                ]
+                            },
+                            {
+                                "fileName": "MongoDBInternalRouter.java",
+                                "className": "MongoDBInternalRouter",
+                                "methodName": "configure",
+                                "local_types": [
+                                    "String"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\configuration\\docker-compose\\mongodb.yaml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/camel-mongodb-app\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "content-based-router",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "17",
+                "locs": "571",
+                "dependencies": [
+                    "spring-boot-dependencies",
+                    "camel-spring-boot-dependencies",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-undertow",
+                    "spring-boot-starter-actuator",
+                    "camel-spring-boot-starter",
+                    "camel-stream-starter",
+                    "spring-boot-starter-test",
+                    "camel-test-spring-junit5"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "content-based-router",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CamelSpringBootApplication",
+                            "src.main.org.camel.examples.CamelSpringBootApplication"
+                        ],
+                        [
+                            "ContentBasedRouterBean",
+                            "src.main.org.camel.examples.bean.ContentBasedRouterBean"
+                        ],
+                        [
+                            "MySpringBean",
+                            "src.main.org.camel.examples.bean.MySpringBean"
+                        ],
+                        [
+                            "ProcessorDirectB",
+                            "src.main.org.camel.examples.processor.ProcessorDirectB"
+                        ],
+                        [
+                            "BaseRouter",
+                            "src.main.org.camel.examples.route.BaseRouter"
+                        ],
+                        [
+                            "ContentBasedRouter",
+                            "src.main.org.camel.examples.route.ContentBasedRouter"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\ContentBasedRouterBean.java/org.apache.camel.Exchange",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\ContentBasedRouterBean.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\MySpringBean.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\MySpringBean.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\processor\\ProcessorDirectB.java/org.apache.camel.Exchange",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\processor\\ProcessorDirectB.java/org.apache.camel.Processor",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java/org.camel.examples.bean.ContentBasedRouterBean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java/org.camel.examples.processor.ProcessorDirectB",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java/org.springframework.stereotype.Component"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\ContentBasedRouterBean.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\MySpringBean.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\MySpringBean.java/Value",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\processor\\ProcessorDirectB.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\ContentBasedRouterBean.java/directB",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\ContentBasedRouterBean.java/directC",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\ContentBasedRouterBean.java/directD",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\MySpringBean.java/saySomething",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\processor\\ProcessorDirectB.java/process",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java/configure"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "say",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\.idea\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\.idea\\compiler.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\.idea\\encodings.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\.idea\\jarRepositories.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\.idea\\misc.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\.idea\\uiDesigner.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\.idea\\vcs.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\ContentBasedRouterBean.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\bean\\MySpringBean.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\processor\\ProcessorDirectB.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\java\\org\\camel\\examples\\route\\ContentBasedRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\resources\\META-INF\\LICENSE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\resources\\META-INF\\NOTICE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\test\\java\\org\\camel\\examples\\MySpringBootApplicationTest.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ContentBasedRouterBean.java",
+                                "className": "ContentBasedRouterBean",
+                                "methodName": "directB",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ContentBasedRouterBean.java",
+                                "className": "ContentBasedRouterBean",
+                                "methodName": "directC",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ContentBasedRouterBean.java",
+                                "className": "ContentBasedRouterBean",
+                                "methodName": "directD",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MySpringBean.java",
+                                "className": "MySpringBean",
+                                "methodName": "saySomething",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ProcessorDirectB.java",
+                                "className": "ProcessorDirectB",
+                                "methodName": "process",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "BaseRouter.java",
+                                "className": "BaseRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ContentBasedRouter.java",
+                                "className": "ContentBasedRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ContentBasedRouterBean.java",
+                                "className": "ContentBasedRouterBean",
+                                "methodName": "directB",
+                                "param_types": [
+                                    "Exchange"
+                                ]
+                            },
+                            {
+                                "fileName": "ContentBasedRouterBean.java",
+                                "className": "ContentBasedRouterBean",
+                                "methodName": "directC",
+                                "param_types": [
+                                    "Exchange"
+                                ]
+                            },
+                            {
+                                "fileName": "ContentBasedRouterBean.java",
+                                "className": "ContentBasedRouterBean",
+                                "methodName": "directD",
+                                "param_types": [
+                                    "Exchange"
+                                ]
+                            },
+                            {
+                                "fileName": "ProcessorDirectB.java",
+                                "className": "ProcessorDirectB",
+                                "methodName": "process",
+                                "param_types": [
+                                    "Exchange"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/content-based-router\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "multicast",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "14",
+                "locs": "537",
+                "dependencies": [
+                    "spring-boot-dependencies",
+                    "camel-spring-boot-dependencies",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-undertow",
+                    "spring-boot-starter-actuator",
+                    "camel-spring-boot-starter",
+                    "camel-stream-starter",
+                    "spring-boot-starter-test",
+                    "camel-test-spring-junit5"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "multicast",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CamelSpringBootApplication",
+                            "src.main.org.camel.examples.CamelSpringBootApplication"
+                        ],
+                        [
+                            "BaseRouter",
+                            "src.main.org.camel.examples.route.BaseRouter"
+                        ],
+                        [
+                            "MulticastRouter",
+                            "src.main.org.camel.examples.route.MulticastRouter"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\MulticastRouter.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\MulticastRouter.java/org.springframework.stereotype.Component"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\MulticastRouter.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\MulticastRouter.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\MulticastRouter.java/configure"
+                    ],
+                    "Fields": [],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\.idea\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\.idea\\compiler.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\.idea\\encodings.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\.idea\\jarRepositories.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\.idea\\misc.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\.idea\\uiDesigner.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\.idea\\vcs.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\CamelSpringBootApplication.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\BaseRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\java\\org\\camel\\examples\\route\\MulticastRouter.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\resources\\META-INF\\LICENSE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\resources\\META-INF\\NOTICE.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\test\\java\\org\\camel\\examples\\MySpringBootApplicationTest.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "BaseRouter.java",
+                                "className": "BaseRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MulticastRouter.java",
+                                "className": "MulticastRouter",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "CamelSpringBootApplication.java",
+                                "className": "CamelSpringBootApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/multicast\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "spring-camel-kafka-schema-registry",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "13",
+                "locs": "405",
+                "dependencies": [
+                    "spring-boot-starter",
+                    "camel-spring-boot",
+                    "camel-kafka",
+                    "spring-schema-registry",
+                    "avro",
+                    "spring-kafka-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "spring-camel-kafka-schema-registry",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "App",
+                            "src.main.com.github.mvallim.camelkafka.App"
+                        ],
+                        [
+                            "KafkaRoute",
+                            "src.main.com.github.mvallim.camelkafka.api.KafkaRoute"
+                        ],
+                        [
+                            "AppConfiguration",
+                            "src.main.com.github.mvallim.camelkafka.configuration.AppConfiguration"
+                        ],
+                        [
+                            "SchemaRegistryKafkaConfiguration",
+                            "src.main.com.github.mvallim.camelkafka.configuration.SchemaRegistryKafkaConfiguration"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\App.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\App.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\App.java/org.springframework.context.annotation.ComponentScan",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/org.apache.camel.Exchange",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/org.apache.camel.Processor",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/org.apache.camel.ProducerTemplate",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/org.apache.camel.component.kafka.KafkaEndpoint",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/com.github.mvallim.camelkafka.model.People",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.apache.camel.component.kafka.KafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.apache.camel.component.kafka.KafkaEndpoint",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.apache.kafka.common.serialization.StringDeserializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.apache.kafka.common.serialization.StringSerializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.springframework.schemaregistry.serializer.WrapperKafkaAvroDeserializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/org.springframework.schemaregistry.serializer.WrapperKafkaAvroSerializer",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/io.confluent.kafka.serializers.subject.TopicRecordNameStrategy",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/java.util.Objects",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/java.util.Properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/org.apache.camel.component.kafka.KafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/org.apache.camel.spi.UriParam"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\App.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\App.java/ComponentScan",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/Component",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/Override",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/Bean",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/UriParam",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\App.java/main",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java/configure",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/kafkaConfiguration",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/kafkaTest",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java/kafkaMovie",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/getSchemaRegistryURL",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/setSchemaRegistryURL",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/isSpecificAvroReader",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/setSpecificAvroReader",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/setAcks",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/getAcks",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/isAutoRegisterSchemas",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/setAutoRegisterSchemas",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/getValueSubjectNameStrategy",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/setValueSubjectNameStrategy",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/getKeySubjectNameStrategy",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/setKeySubjectNameStrategy",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/createConsumerProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/createProducerProperties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java/addPropertyIfNotNull"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "schemaRegistryURL",
+                            "type": "String"
+                        },
+                        {
+                            "name": "autoRegisterSchemas",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "valueSubjectNameStrategy",
+                            "type": "String"
+                        },
+                        {
+                            "name": "keySubjectNameStrategy",
+                            "type": "String"
+                        },
+                        {
+                            "name": "specificAvroReader",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "acks",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "configuration",
+                            "type": "SchemaRegistryKafkaConfiguration"
+                        },
+                        {
+                            "name": "kafkaEndpoint",
+                            "type": "KafkaEndpoint"
+                        },
+                        {
+                            "name": "kafkaEndpoint",
+                            "type": "KafkaEndpoint"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "Properties"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "Properties"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "configuration",
+                            "type": "KafkaConfiguration"
+                        },
+                        {
+                            "name": "configuration",
+                            "type": "KafkaConfiguration"
+                        },
+                        {
+                            "name": "schemaRegistryURL",
+                            "type": "String"
+                        },
+                        {
+                            "name": "specificAvroReader",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "acks",
+                            "type": "String"
+                        },
+                        {
+                            "name": "autoRegisterSchemas",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "valueSubjectNameStrategy",
+                            "type": "String"
+                        },
+                        {
+                            "name": "keySubjectNameStrategy",
+                            "type": "String"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "Properties"
+                        },
+                        {
+                            "name": "key",
+                            "type": "String"
+                        },
+                        {
+                            "name": "value",
+                            "type": "T"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\CONTRIBUTING.md",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\CONTRIBUTORS.txt",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\LICENSE",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\README.md",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\App.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\api\\KafkaRoute.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\AppConfiguration.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\java\\com\\github\\mvallim\\camelkafka\\configuration\\SchemaRegistryKafkaConfiguration.java",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\application-LOCAL.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\logback.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\avro\\movies.avsc",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\avro\\people.avsc"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "App.java",
+                                "className": "App",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "KafkaRoute.java",
+                                "className": "KafkaRoute",
+                                "methodName": "configure",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaConfiguration",
+                                "returnType": "KafkaConfiguration"
+                            },
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaTest",
+                                "returnType": "KafkaEndpoint"
+                            },
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaMovie",
+                                "returnType": "KafkaEndpoint"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "getSchemaRegistryURL",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "setSchemaRegistryURL",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "App.java",
+                                "className": "App",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaTest",
+                                "param_types": [
+                                    "KafkaConfiguration"
+                                ]
+                            },
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaMovie",
+                                "param_types": [
+                                    "KafkaConfiguration"
+                                ]
+                            },
+                            {
+                                "fileName": "SchemaRegistryKafkaConfiguration.java",
+                                "className": "SchemaRegistryKafkaConfiguration",
+                                "methodName": "setSchemaRegistryURL",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaConfiguration",
+                                "local_types": [
+                                    "SchemaRegistryKafkaConfiguration"
+                                ]
+                            },
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaTest",
+                                "local_types": [
+                                    "KafkaEndpoint"
+                                ]
+                            },
+                            {
+                                "fileName": "AppConfiguration.java",
+                                "className": "AppConfiguration",
+                                "methodName": "kafkaMovie",
+                                "local_types": [
+                                    "KafkaEndpoint"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\application-LOCAL.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/apache-camel-immersion-main/spring-camel-kafka-schema-registry\\src\\main\\resources\\logback.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [
+            "app-camel-command",
+            "app-camel-query",
+            "camel-mongodb-app",
+            "content-based-router",
+            "multicast",
+            "spring-camel-kafka-schema-registry"
+        ],
+        "selectedMicroservices": [
+            "multicast",
+            "app-camel-query",
+            "app-camel-command",
+            "content-based-router",
+            "camel-mongodb-app",
+            "spring-camel-kafka-schema-registry"
+        ],
+        "selectedMicroservicesV2": [
+            "app-camel-command",
+            "app-camel-query",
+            "camel-mongodb-app",
+            "content-based-router",
+            "multicast",
+            "spring-camel-kafka-schema-registry"
+        ]
+    }
+}

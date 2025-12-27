@@ -1,0 +1,545 @@
+{
+    "system": {
+        "folders": [
+            ".mvn",
+            "src"
+        ],
+        "dependencies": [
+            "spring-boot-starter-data-jpa",
+            "spring-boot-starter-data-redis",
+            "spring-boot-starter-web",
+            "mysql-connector-java",
+            "postgresql",
+            "spring-boot-configuration-processor",
+            "lombok",
+            "spring-boot-starter-test"
+        ],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\docker-compose.yaml",
+            "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\pom.xml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "17",
+                "locs": "713",
+                "dependencies": [
+                    "spring-boot-starter-data-jpa",
+                    "spring-boot-starter-data-redis",
+                    "spring-boot-starter-web",
+                    "mysql-connector-java",
+                    "postgresql",
+                    "spring-boot-configuration-processor",
+                    "lombok",
+                    "spring-boot-starter-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "MavenWrapperDownloader",
+                            ".mvn.wrapper.MavenWrapperDownloader"
+                        ],
+                        [
+                            "DemoCacheAsideApplication",
+                            "src.main.id.ten.app.democacheaside.DemoCacheAsideApplication"
+                        ],
+                        [
+                            "Product",
+                            "src.main.id.ten.app.democacheaside.domain.Product"
+                        ],
+                        [
+                            "ProductDto",
+                            "src.main.id.ten.app.democacheaside.dto.ProductDto"
+                        ],
+                        [
+                            "ProductController",
+                            "src.main.id.ten.app.democacheaside.handler.ProductController"
+                        ],
+                        [
+                            "ProductServiceImpl",
+                            "src.main.id.ten.app.democacheaside.service.impl.ProductServiceImpl"
+                        ],
+                        [
+                            "DemoCacheAsideApplicationTests",
+                            "src.test.id.ten.app.democacheaside.DemoCacheAsideApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplication.java/org.springframework.cache.annotation.EnableCaching",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/lombok.Data",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/lombok.NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/lombok.ToString",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/javax.persistence.Entity",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/javax.persistence.GeneratedValue",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/javax.persistence.GenerationType",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/javax.persistence.Id",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\dto\\ProductDto.java/lombok.Data",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/id.ten.app.democacheaside.domain.Product",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/id.ten.app.democacheaside.dto.ProductDto",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/id.ten.app.democacheaside.service.ProductService",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/org.springframework.http.HttpStatus",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/org.springframework.http.ResponseEntity",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/org.springframework.web.bind.annotation",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\repository\\ProductRepository.java/id.ten.app.democacheaside.domain.Product",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\repository\\ProductRepository.java/org.springframework.data.jpa.repository.JpaRepository",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\repository\\ProductRepository.java/org.springframework.stereotype.Repository",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java/id.ten.app.democacheaside.domain.Product",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java/id.ten.app.democacheaside.dto.ProductDto",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java/java.util.Optional",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/id.ten.app.democacheaside.domain.Product",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/id.ten.app.democacheaside.dto.ProductDto",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/id.ten.app.democacheaside.repository.ProductRepository",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/id.ten.app.democacheaside.service.ProductService",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/org.springframework.cache.annotation.CacheEvict",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/org.springframework.cache.annotation.Cacheable",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/org.springframework.stereotype.Service",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/java.util.Optional"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplication.java/EnableCaching",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/Entity",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/Data",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/ToString",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/Id",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java/GeneratedValue",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\dto\\ProductDto.java/Data",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/GetMapping",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/PatchMapping",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/RequestBody",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\repository\\ProductRepository.java/Repository",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/Service",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/CacheEvict",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/Cacheable"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/getAll",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/getProduct",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java/updateProduct",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java/getProduct",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java/updateProduct",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java/getAll",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/getProduct",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/updateProduct",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/getAll",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/entityToDto",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java/setQuantityAvailable"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "id",
+                            "type": "long"
+                        },
+                        {
+                            "name": "description",
+                            "type": "String"
+                        },
+                        {
+                            "name": "price",
+                            "type": "double"
+                        },
+                        {
+                            "name": "qtyAvailable",
+                            "type": "long"
+                        },
+                        {
+                            "name": "id",
+                            "type": "long"
+                        },
+                        {
+                            "name": "description",
+                            "type": "String"
+                        },
+                        {
+                            "name": "price",
+                            "type": "double"
+                        },
+                        {
+                            "name": "quantityAvailable",
+                            "type": "long"
+                        },
+                        {
+                            "name": "productService",
+                            "type": "ProductService"
+                        },
+                        {
+                            "name": "productRepository",
+                            "type": "ProductRepository"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "dto",
+                            "type": "ProductDto"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "long"
+                        },
+                        {
+                            "name": "dto",
+                            "type": "ProductDto"
+                        },
+                        {
+                            "name": "id",
+                            "type": "long"
+                        },
+                        {
+                            "name": "productDto",
+                            "type": "ProductDto"
+                        },
+                        {
+                            "name": "id",
+                            "type": "long"
+                        },
+                        {
+                            "name": "productDto",
+                            "type": "ProductDto"
+                        },
+                        {
+                            "name": "product",
+                            "type": "Product"
+                        },
+                        {
+                            "name": "product",
+                            "type": "Product"
+                        },
+                        {
+                            "name": "dto",
+                            "type": "ProductDto"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [
+                            "localhost:3306/db",
+                            "localhost:3306/db"
+                        ],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\docker-compose.yaml",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\README.md",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\.mvn\\wrapper\\maven-wrapper.jar",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\.mvn\\wrapper\\maven-wrapper.properties",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\domain\\Product.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\dto\\ProductDto.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\repository\\ProductRepository.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\ProductService.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\service\\impl\\ProductServiceImpl.java",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\resources\\application.yml",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\test\\java\\id\\ten\\app\\democacheaside\\DemoCacheAsideApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 3,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java",
+                                "line": 19,
+                                "method": "GET",
+                                "code": "@GetMapping(\"/product\")"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java",
+                                "line": 24,
+                                "method": "GET",
+                                "code": "@GetMapping(\"/product/{id}\")"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\java\\id\\ten\\app\\democacheaside\\handler\\ProductController.java",
+                                "line": 31,
+                                "method": "PATCH",
+                                "code": "@PatchMapping(\"/product\")"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "downloadFileFromURL",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "DemoCacheAsideApplication.java",
+                                "className": "DemoCacheAsideApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ProductController.java",
+                                "className": "ProductController",
+                                "methodName": "getAll",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "ProductController.java",
+                                "className": "ProductController",
+                                "methodName": "getProduct",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "ProductController.java",
+                                "className": "ProductController",
+                                "methodName": "updateProduct",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "getProduct",
+                                "returnType": "Optional"
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "updateProduct",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "getAll",
+                                "returnType": "List"
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "entityToDto",
+                                "returnType": "ProductDto"
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "setQuantityAvailable",
+                                "returnType": "Product"
+                            },
+                            {
+                                "fileName": "DemoCacheAsideApplicationTests.java",
+                                "className": "DemoCacheAsideApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "ProductController.java",
+                                "className": "ProductController",
+                                "methodName": "getAll",
+                                "generic_return_types": [
+                                    "List"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductController.java",
+                                "className": "ProductController",
+                                "methodName": "getProduct",
+                                "generic_return_types": [
+                                    "ProductDto"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "getProduct",
+                                "generic_return_types": [
+                                    "ProductDto"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "getAll",
+                                "generic_return_types": [
+                                    "Product"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "downloadFileFromURL",
+                                "param_types": [
+                                    "String",
+                                    "File"
+                                ]
+                            },
+                            {
+                                "fileName": "DemoCacheAsideApplication.java",
+                                "className": "DemoCacheAsideApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductController.java",
+                                "className": "ProductController",
+                                "methodName": "getProduct",
+                                "param_types": [
+                                    "long"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductController.java",
+                                "className": "ProductController",
+                                "methodName": "updateProduct",
+                                "param_types": [
+                                    "ProductDto"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "getProduct",
+                                "param_types": [
+                                    "long"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "updateProduct",
+                                "param_types": [
+                                    "ProductDto"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "entityToDto",
+                                "param_types": [
+                                    "Product"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "setQuantityAvailable",
+                                "param_types": [
+                                    "Product",
+                                    "ProductDto"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "main",
+                                "local_types": [
+                                    "File",
+                                    "File",
+                                    "String",
+                                    "File"
+                                ]
+                            },
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "downloadFileFromURL",
+                                "local_types": [
+                                    "URL",
+                                    "ReadableByteChannel",
+                                    "FileOutputStream"
+                                ]
+                            },
+                            {
+                                "fileName": "ProductServiceImpl.java",
+                                "className": "ProductServiceImpl",
+                                "methodName": "entityToDto",
+                                "local_types": [
+                                    "ProductDto"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\src\\main\\resources\\application.yml",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\docker-compose.yaml",
+                        "G:/AntiPattern_Detection/projects/spring-boot-redis-cache-aside-main\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": [
+            "src"
+        ]
+    }
+}

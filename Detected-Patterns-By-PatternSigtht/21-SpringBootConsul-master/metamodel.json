@@ -1,0 +1,274 @@
+{
+    "system": {
+        "folders": [
+            "src"
+        ],
+        "dependencies": [
+            "spring-boot-starter-web",
+            "spring-boot-starter-test",
+            "spring-boot-starter-webflux",
+            "httpclient",
+            "spring-cloud-kubernetes-fabric8-leader"
+        ],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\dependency-reduced-pom.xml",
+            "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\pom.xml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "8",
+                "locs": "351",
+                "dependencies": [
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-test",
+                    "spring-boot-starter-webflux",
+                    "httpclient",
+                    "spring-cloud-kubernetes-fabric8-leader"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "LeaderController",
+                            "src.main.com.ron.SpringBootConsul.LeaderController"
+                        ],
+                        [
+                            "SpringBootConsul",
+                            "src.main.com.ron.SpringBootConsul.SpringBootConsul"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.context.event.EventListener",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.http.ResponseEntity",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.integration.leader.Context",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.integration.leader.event.OnGrantedEvent",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.integration.leader.event.OnRevokedEvent",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.web.bind.annotation.GetMapping",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.web.bind.annotation.PutMapping",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/java.net.InetAddress",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/java.net.UnknownHostException",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java/org.springframework.cloud.kubernetes.commons.leader.Leader",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java/java.io.IOException",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java/java.net.URISyntaxException"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/Value",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/GetMapping",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/PutMapping",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/EventListener",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java/SpringBootApplication"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/getInfo",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/revokeLeadership",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java/handleEvent",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java/main"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "host",
+                            "type": "String"
+                        },
+                        {
+                            "name": "role",
+                            "type": "String"
+                        },
+                        {
+                            "name": "context",
+                            "type": "Context"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "message",
+                            "type": "String"
+                        },
+                        {
+                            "name": "message",
+                            "type": "String"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "event",
+                            "type": "OnGrantedEvent"
+                        },
+                        {
+                            "name": "event",
+                            "type": "OnRevokedEvent"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\.DS_Store",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\dependency-reduced-pom.xml",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\.DS_Store",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\.DS_Store",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\.DS_Store",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\.DS_Store",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\.DS_Store",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\.DS_Store",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\SpringBootConsul.java",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\resources\\bootstrap.properties"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 2,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java",
+                                "line": 35,
+                                "method": "GET",
+                                "code": "@GetMapping"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\java\\com\\ron\\SpringBootConsul\\LeaderController.java",
+                                "line": 54,
+                                "method": "PUT",
+                                "code": "@PutMapping"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "getInfo",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "revokeLeadership",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SpringBootConsul.java",
+                                "className": "SpringBootConsul",
+                                "methodName": "main",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "revokeLeadership",
+                                "generic_return_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "param_types": [
+                                    "OnGrantedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "param_types": [
+                                    "OnRevokedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "SpringBootConsul.java",
+                                "className": "SpringBootConsul",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "revokeLeadership",
+                                "local_types": [
+                                    "String"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\src\\main\\resources\\bootstrap.properties",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\dependency-reduced-pom.xml",
+                        "G:/AntiPattern_Detection/projects/SpringBootConsul-master\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": [
+            "src"
+        ]
+    }
+}

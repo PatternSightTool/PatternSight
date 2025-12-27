@@ -1,0 +1,234 @@
+{
+    "system": {
+        "folders": [
+            "gradle",
+            "src"
+        ],
+        "dependencies": [
+            "spring-boot-starter",
+            "spring-boot-starter-web",
+            "spring-boot-starter-actuator"
+        ],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\deployment.yml",
+            "G:\\AntiPattern_Detection\\projects\\spring-cloud-kubernetes-leader-example-main\\gradle\\wrapper\\gradle-wrapper.properties"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "93.12"
+                },
+                "nb_files": "15",
+                "locs": "391",
+                "dependencies": [
+                    "spring-boot-starter",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-actuator"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "LeaderelectionApplication",
+                            "src.main.com.nbreval.examples.leaderelection.LeaderelectionApplication"
+                        ],
+                        [
+                            "ScheduledTask",
+                            "src.main.com.nbreval.examples.leaderelection.ScheduledTask"
+                        ],
+                        [
+                            "LeaderEvents",
+                            "src.main.com.nbreval.examples.leaderelection.leadership.LeaderEvents"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\LeaderelectionApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\LeaderelectionApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\LeaderelectionApplication.java/org.springframework.scheduling.annotation.EnableScheduling",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/java.util.concurrent.TimeUnit",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/org.springframework.boot.autoconfigure.condition.ConditionalOnProperty",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/org.springframework.scheduling.annotation.Scheduled",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/com.nbreval.examples.leaderelection.leadership.LeaderEvents",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/java.util.concurrent.atomic.AtomicBoolean",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/org.springframework.boot.autoconfigure.condition.ConditionalOnProperty",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/org.springframework.context.event.EventListener",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/org.springframework.integration.leader.event.OnGrantedEvent",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/org.springframework.integration.leader.event.OnRevokedEvent",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/org.springframework.stereotype.Component"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\LeaderelectionApplication.java/EnableScheduling",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\LeaderelectionApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/Component",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/ConditionalOnProperty",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/Scheduled",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/Component",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/ConditionalOnProperty",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/EventListener"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\LeaderelectionApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java/onlyLeaderTask",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/grantLeaderEvent",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/revokeLeaderEvent",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java/isLeader"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "logger",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "leaderEvents",
+                            "type": "LeaderEvents"
+                        },
+                        {
+                            "name": "isLeader",
+                            "type": "AtomicBoolean"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "event",
+                            "type": "OnGrantedEvent"
+                        },
+                        {
+                            "name": "event",
+                            "type": "OnRevokedEvent"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\build.gradle",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\deploy.bat",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\deploy.sh",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\deployment.yml",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\gradlew",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\gradlew.bat",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\README.md",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\settings.gradle",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\gradle\\wrapper\\gradle-wrapper.jar",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\gradle\\wrapper\\gradle-wrapper.properties",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\LeaderelectionApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\ScheduledTask.java",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\java\\com\\nbreval\\examples\\leaderelection\\leadership\\LeaderEvents.java",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\resources\\application.yml"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "LeaderelectionApplication.java",
+                                "className": "LeaderelectionApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ScheduledTask.java",
+                                "className": "ScheduledTask",
+                                "methodName": "onlyLeaderTask",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "LeaderEvents.java",
+                                "className": "LeaderEvents",
+                                "methodName": "grantLeaderEvent",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "LeaderEvents.java",
+                                "className": "LeaderEvents",
+                                "methodName": "revokeLeaderEvent",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "LeaderelectionApplication.java",
+                                "className": "LeaderelectionApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "LeaderEvents.java",
+                                "className": "LeaderEvents",
+                                "methodName": "grantLeaderEvent",
+                                "param_types": [
+                                    "OnGrantedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "LeaderEvents.java",
+                                "className": "LeaderEvents",
+                                "methodName": "revokeLeaderEvent",
+                                "param_types": [
+                                    "OnRevokedEvent"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\gradle\\wrapper\\gradle-wrapper.properties",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\deployment.yml",
+                        "G:/AntiPattern_Detection/projects/spring-cloud-kubernetes-leader-example-main\\src\\main\\resources\\application.yml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": [
+            "src"
+        ]
+    }
+}

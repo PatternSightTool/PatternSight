@@ -1,0 +1,376 @@
+{
+    "system": {
+        "folders": [
+            "src"
+        ],
+        "dependencies": [
+            "spring-boot-starter",
+            "spring-boot-starter-actuator",
+            "spring-cloud-kubernetes-fabric8-leader",
+            "awaitility",
+            "spring-boot-starter-test"
+        ],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/leader-election-spring-main\\confimap.yml",
+            "G:/AntiPattern_Detection/projects/leader-election-spring-main\\deploy.yml",
+            "G:/AntiPattern_Detection/projects/leader-election-spring-main\\leader-role.yml",
+            "G:/AntiPattern_Detection/projects/leader-election-spring-main\\leader-rolebinding.yml",
+            "G:/AntiPattern_Detection/projects/leader-election-spring-main\\pom.xml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "95.28"
+                },
+                "nb_files": "18",
+                "locs": "679",
+                "dependencies": [
+                    "spring-boot-starter",
+                    "spring-boot-starter-actuator",
+                    "spring-cloud-kubernetes-fabric8-leader",
+                    "awaitility",
+                    "spring-boot-starter-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "SampleLeaderElectionWithSpringCloudApplication",
+                            "src.main.br.com.jpmm.sampleleaderelectionwithspringcloud.SampleLeaderElectionWithSpringCloudApplication"
+                        ],
+                        [
+                            "LeaderController",
+                            "src.main.br.com.jpmm.sampleleaderelectionwithspringcloud.controller.LeaderController"
+                        ],
+                        [
+                            "ManagerContext",
+                            "src.main.br.com.jpmm.sampleleaderelectionwithspringcloud.support.ManagerContext"
+                        ],
+                        [
+                            "ScheduledTasks",
+                            "src.main.br.com.jpmm.sampleleaderelectionwithspringcloud.support.ScheduledTasks"
+                        ],
+                        [
+                            "SampleLeaderElectionWithSpringCloudApplicationTests",
+                            "src.test.br.com.jpmm.sampleleaderelectionwithspringcloud.SampleLeaderElectionWithSpringCloudApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplication.java/org.springframework.scheduling.annotation.EnableScheduling",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/br.com.jpmm.sampleleaderelectionwithspringcloud.support.ManagerContext",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.context.event.EventListener",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.http.ResponseEntity",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.integration.leader.Context",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.integration.leader.event.OnGrantedEvent",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.integration.leader.event.OnRevokedEvent",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.web.bind.annotation.GetMapping",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.web.bind.annotation.PutMapping",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/java.net.InetAddress",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/java.net.UnknownHostException",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ManagerContext.java/org.springframework.integration.leader.Context",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ManagerContext.java/org.springframework.stereotype.Service",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/org.springframework.scheduling.annotation.Scheduled",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/java.text.SimpleDateFormat",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/java.util.Date"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplication.java/EnableScheduling",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/Value",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/GetMapping",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/PutMapping",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/EventListener",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ManagerContext.java/Service",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/Component",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/Scheduled"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/getInfo",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/revokeLeadership",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java/handleEvent",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ManagerContext.java/getContext",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ManagerContext.java/setContext",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/reportCurrentTime",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java/isLeader"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "log",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "host",
+                            "type": "String"
+                        },
+                        {
+                            "name": "role",
+                            "type": "String"
+                        },
+                        {
+                            "name": "context",
+                            "type": "Context"
+                        },
+                        {
+                            "name": "managerContext",
+                            "type": "ManagerContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "Context"
+                        },
+                        {
+                            "name": "log",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "dateFormat",
+                            "type": "SimpleDateFormat"
+                        },
+                        {
+                            "name": "managerContext",
+                            "type": "ManagerContext"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "message",
+                            "type": "String"
+                        },
+                        {
+                            "name": "message",
+                            "type": "String"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "event",
+                            "type": "OnGrantedEvent"
+                        },
+                        {
+                            "name": "event",
+                            "type": "OnRevokedEvent"
+                        },
+                        {
+                            "name": "context",
+                            "type": "Context"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\confimap.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\deploy.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\HELP.md",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\leader-role.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\leader-rolebinding.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\mvnw",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\README.md",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplication.java",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ManagerContext.java",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\support\\ScheduledTasks.java",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\test\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\SampleLeaderElectionWithSpringCloudApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 2,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java",
+                                "line": 60,
+                                "method": "GET",
+                                "code": "@GetMapping"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\java\\br\\com\\jpmm\\sampleleaderelectionwithspringcloud\\controller\\LeaderController.java",
+                                "line": 75,
+                                "method": "PUT",
+                                "code": "@PutMapping"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "SampleLeaderElectionWithSpringCloudApplication.java",
+                                "className": "SampleLeaderElectionWithSpringCloudApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "getInfo",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "revokeLeadership",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ManagerContext.java",
+                                "className": "ManagerContext",
+                                "methodName": "getContext",
+                                "returnType": "Context"
+                            },
+                            {
+                                "fileName": "ManagerContext.java",
+                                "className": "ManagerContext",
+                                "methodName": "setContext",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ScheduledTasks.java",
+                                "className": "ScheduledTasks",
+                                "methodName": "reportCurrentTime",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SampleLeaderElectionWithSpringCloudApplicationTests.java",
+                                "className": "SampleLeaderElectionWithSpringCloudApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "revokeLeadership",
+                                "generic_return_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "SampleLeaderElectionWithSpringCloudApplication.java",
+                                "className": "SampleLeaderElectionWithSpringCloudApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "param_types": [
+                                    "OnGrantedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "handleEvent",
+                                "param_types": [
+                                    "OnRevokedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "ManagerContext.java",
+                                "className": "ManagerContext",
+                                "methodName": "setContext",
+                                "param_types": [
+                                    "Context"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "LeaderController.java",
+                                "className": "LeaderController",
+                                "methodName": "revokeLeadership",
+                                "local_types": [
+                                    "String"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\confimap.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\deploy.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\leader-role.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\leader-rolebinding.yml",
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/leader-election-spring-main\\Dockerfile"
+                    ],
+                    "images": [
+                        "openjdk:17"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": [
+            "src"
+        ]
+    }
+}

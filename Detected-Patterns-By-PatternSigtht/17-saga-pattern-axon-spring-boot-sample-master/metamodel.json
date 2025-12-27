@@ -1,0 +1,1231 @@
+{
+    "system": {
+        "folders": [
+            "core-apis",
+            "order-service",
+            "payment-service",
+            "shipping-service"
+        ],
+        "dependencies": [],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master\\pom.xml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "core-apis",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "10",
+                "locs": "141",
+                "dependencies": [
+                    "axon-modelling"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "core-apis",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CreateInvoiceCommand",
+                            "src.main.com.progressivecoder.ecommerce.commands.CreateInvoiceCommand"
+                        ],
+                        [
+                            "CreateOrderCommand",
+                            "src.main.com.progressivecoder.ecommerce.commands.CreateOrderCommand"
+                        ],
+                        [
+                            "CreateShippingCommand",
+                            "src.main.com.progressivecoder.ecommerce.commands.CreateShippingCommand"
+                        ],
+                        [
+                            "UpdateOrderStatusCommand",
+                            "src.main.com.progressivecoder.ecommerce.commands.UpdateOrderStatusCommand"
+                        ],
+                        [
+                            "InvoiceCreatedEvent",
+                            "src.main.com.progressivecoder.ecommerce.events.InvoiceCreatedEvent"
+                        ],
+                        [
+                            "OrderCreatedEvent",
+                            "src.main.com.progressivecoder.ecommerce.events.OrderCreatedEvent"
+                        ],
+                        [
+                            "OrderShippedEvent",
+                            "src.main.com.progressivecoder.ecommerce.events.OrderShippedEvent"
+                        ],
+                        [
+                            "OrderUpdatedEvent",
+                            "src.main.com.progressivecoder.ecommerce.events.OrderUpdatedEvent"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateInvoiceCommand.java/org.axonframework.modelling.command.TargetAggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateOrderCommand.java/org.axonframework.modelling.command.TargetAggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateOrderCommand.java/java.math.BigDecimal",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateShippingCommand.java/org.axonframework.modelling.command.TargetAggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\UpdateOrderStatusCommand.java/org.axonframework.modelling.command.TargetAggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\events\\OrderCreatedEvent.java/java.math.BigDecimal"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateInvoiceCommand.java/TargetAggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateOrderCommand.java/TargetAggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateShippingCommand.java/TargetAggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\UpdateOrderStatusCommand.java/TargetAggregateIdentifier"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [],
+                    "Fields": [
+                        {
+                            "name": "paymentId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "itemType",
+                            "type": "String"
+                        },
+                        {
+                            "name": "price",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "currency",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderStatus",
+                            "type": "String"
+                        },
+                        {
+                            "name": "shippingId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "paymentId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderStatus",
+                            "type": "String"
+                        },
+                        {
+                            "name": "paymentId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "itemType",
+                            "type": "String"
+                        },
+                        {
+                            "name": "price",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "currency",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderStatus",
+                            "type": "String"
+                        },
+                        {
+                            "name": "shippingId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "paymentId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderStatus",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateInvoiceCommand.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateOrderCommand.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\CreateShippingCommand.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\commands\\UpdateOrderStatusCommand.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\events\\InvoiceCreatedEvent.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\events\\OrderCreatedEvent.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\events\\OrderShippedEvent.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\src\\main\\java\\com\\progressivecoder\\ecommerce\\events\\OrderUpdatedEvent.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\core-apis-0.0.1-SNAPSHOT.jar",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\classes\\com\\progressivecoder\\ecommerce\\commands\\CreateInvoiceCommand.class",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\classes\\com\\progressivecoder\\ecommerce\\commands\\CreateOrderCommand.class",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\classes\\com\\progressivecoder\\ecommerce\\commands\\CreateShippingCommand.class",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\classes\\com\\progressivecoder\\ecommerce\\events\\InvoiceCreatedEvent.class",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\classes\\com\\progressivecoder\\ecommerce\\events\\OrderCreatedEvent.class",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\maven-archiver\\pom.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\maven-status\\maven-compiler-plugin\\compile\\default-compile\\createdFiles.lst",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\maven-status\\maven-compiler-plugin\\compile\\default-compile\\inputFiles.lst"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\target\\maven-archiver\\pom.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/core-apis\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "order-service",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "17",
+                "locs": "696",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-boot-starter-data-jpa",
+                    "spring-boot-starter-web",
+                    "axon-spring-boot-starter",
+                    "h2",
+                    "springfox-swagger2",
+                    "springfox-swagger-ui",
+                    "javax.inject",
+                    "core-apis",
+                    "spring-boot-starter-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "order-service",
+                                "files": [
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master\\order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java",
+                                        "caller": "",
+                                        "callee": "",
+                                        "requestParam": [
+                                            {
+                                                "method_type": "POST",
+                                                "@RequestMapping": "/api/orders",
+                                                "uri": "",
+                                                "method_name": "createOrder"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "MavenWrapperDownloader",
+                            ".mvn.wrapper.MavenWrapperDownloader"
+                        ],
+                        [
+                            "OrderServiceApplication",
+                            "src.main.com.progressivecoder.ordermanagement.orderservice.OrderServiceApplication"
+                        ],
+                        [
+                            "OrderAggregate",
+                            "src.main.com.progressivecoder.ordermanagement.orderservice.aggregates.OrderAggregate"
+                        ],
+                        [
+                            "SwaggerConfig",
+                            "src.main.com.progressivecoder.ordermanagement.orderservice.config.SwaggerConfig"
+                        ],
+                        [
+                            "OrderCommandController",
+                            "src.main.com.progressivecoder.ordermanagement.orderservice.controllers.OrderCommandController"
+                        ],
+                        [
+                            "OrderCreateDTO",
+                            "src.main.com.progressivecoder.ordermanagement.orderservice.dto.commands.OrderCreateDTO"
+                        ],
+                        [
+                            "OrderManagementSaga",
+                            "src.main.com.progressivecoder.ordermanagement.orderservice.sagas.OrderManagementSaga"
+                        ],
+                        [
+                            "OrderCommandServiceImpl",
+                            "src.main.com.progressivecoder.ordermanagement.orderservice.services.commands.OrderCommandServiceImpl"
+                        ],
+                        [
+                            "OrderServiceApplicationTests",
+                            "src.test.com.progressivecoder.ordermanagement.orderservice.OrderServiceApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\OrderServiceApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\OrderServiceApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/com.progressivecoder.ecommerce.commands.CreateOrderCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/com.progressivecoder.ecommerce.commands.UpdateOrderStatusCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/com.progressivecoder.ecommerce.events.OrderCreatedEvent",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/com.progressivecoder.ecommerce.events.OrderUpdatedEvent",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/org.axonframework.commandhandling.CommandHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/org.axonframework.eventsourcing.EventSourcingHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/org.axonframework.modelling.command.AggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/org.axonframework.modelling.command.AggregateLifecycle",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/org.axonframework.spring.stereotype.Aggregate",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/java.math.BigDecimal",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/springfox.documentation.builders.PathSelectors",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/springfox.documentation.builders.RequestHandlerSelectors",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/springfox.documentation.service.ApiInfo",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/springfox.documentation.service.Contact",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/springfox.documentation.spi.DocumentationType",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/springfox.documentation.spring.web.plugins.Docket",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/springfox.documentation.swagger2.annotations.EnableSwagger2",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/java.util.Collections",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/com.progressivecoder.ordermanagement.orderservice.dto.commands.OrderCreateDTO",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/com.progressivecoder.ordermanagement.orderservice.services.commands.OrderCommandService",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/io.swagger.annotations.Api",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/org.springframework.web.bind.annotation.PostMapping",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/org.springframework.web.bind.annotation.RequestBody",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/java.util.concurrent.CompletableFuture",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java/java.math.BigDecimal",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/com.progressivecoder.ecommerce.commands.CreateInvoiceCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/com.progressivecoder.ecommerce.commands.CreateShippingCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/com.progressivecoder.ecommerce.commands.UpdateOrderStatusCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/com.progressivecoder.ecommerce.events",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/com.progressivecoder.ordermanagement.orderservice.aggregates.OrderStatus",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/org.axonframework.commandhandling.gateway.CommandGateway",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/org.axonframework.modelling.saga.SagaEventHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/org.axonframework.modelling.saga.SagaLifecycle",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/org.axonframework.modelling.saga.StartSaga",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/org.axonframework.spring.stereotype.Saga",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/javax.inject.Inject",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/java.util.UUID",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandService.java/com.progressivecoder.ordermanagement.orderservice.dto.commands.OrderCreateDTO",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandService.java/java.util.concurrent.CompletableFuture",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/com.progressivecoder.ordermanagement.orderservice.aggregates.OrderStatus",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/com.progressivecoder.ecommerce.commands.CreateOrderCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/com.progressivecoder.ordermanagement.orderservice.dto.commands.OrderCreateDTO",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/org.axonframework.commandhandling.gateway.CommandGateway",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/org.springframework.stereotype.Service",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/java.util.UUID",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/java.util.concurrent.CompletableFuture"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\OrderServiceApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/Aggregate",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/AggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/CommandHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/EventSourcingHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/EnableSwagger2",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/Bean",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/Api",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/PostMapping",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/RequestBody",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/Saga",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/Inject",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/StartSaga",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/SagaEventHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/Service",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\OrderServiceApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java/on",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/apiDocket",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java/getApiInfo",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java/createOrder",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java/getItemType",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java/setItemType",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java/getPrice",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java/setPrice",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java/getCurrency",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java/setCurrency",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java/handle",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandService.java/createOrder",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java/createOrder"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "itemType",
+                            "type": "ItemType"
+                        },
+                        {
+                            "name": "price",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "currency",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderStatus",
+                            "type": "OrderStatus"
+                        },
+                        {
+                            "name": "orderCommandService",
+                            "type": "OrderCommandService"
+                        },
+                        {
+                            "name": "itemType",
+                            "type": "String"
+                        },
+                        {
+                            "name": "price",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "currency",
+                            "type": "String"
+                        },
+                        {
+                            "name": "commandGateway",
+                            "type": "CommandGateway"
+                        },
+                        {
+                            "name": "commandGateway",
+                            "type": "CommandGateway"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "paymentId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "shippingId",
+                            "type": "String"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderCreatedEvent",
+                            "type": "OrderCreatedEvent"
+                        },
+                        {
+                            "name": "updateOrderStatusCommand",
+                            "type": "UpdateOrderStatusCommand"
+                        },
+                        {
+                            "name": "orderUpdatedEvent",
+                            "type": "OrderUpdatedEvent"
+                        },
+                        {
+                            "name": "orderCreateDTO",
+                            "type": "OrderCreateDTO"
+                        },
+                        {
+                            "name": "itemType",
+                            "type": "String"
+                        },
+                        {
+                            "name": "price",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "currency",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderCreatedEvent",
+                            "type": "OrderCreatedEvent"
+                        },
+                        {
+                            "name": "invoiceCreatedEvent",
+                            "type": "InvoiceCreatedEvent"
+                        },
+                        {
+                            "name": "orderShippedEvent",
+                            "type": "OrderShippedEvent"
+                        },
+                        {
+                            "name": "orderUpdatedEvent",
+                            "type": "OrderUpdatedEvent"
+                        },
+                        {
+                            "name": "orderCreateDTO",
+                            "type": "OrderCreateDTO"
+                        },
+                        {
+                            "name": "orderCreateDTO",
+                            "type": "OrderCreateDTO"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\mvnw",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\.mvn\\wrapper\\maven-wrapper.jar",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\.mvn\\wrapper\\maven-wrapper.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\OrderServiceApplication.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\ItemType.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderAggregate.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\aggregates\\OrderStatus.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\config\\SwaggerConfig.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\dto\\commands\\OrderCreateDTO.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\sagas\\OrderManagementSaga.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandService.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\services\\commands\\OrderCommandServiceImpl.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\test\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\OrderServiceApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 1,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\java\\com\\progressivecoder\\ordermanagement\\orderservice\\controllers\\OrderCommandController.java",
+                                "line": 24,
+                                "method": "POST",
+                                "code": "@PostMapping"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "downloadFileFromURL",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderServiceApplication.java",
+                                "className": "OrderServiceApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderAggregate.java",
+                                "className": "OrderAggregate",
+                                "methodName": "on",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderAggregate.java",
+                                "className": "OrderAggregate",
+                                "methodName": "on",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderAggregate.java",
+                                "className": "OrderAggregate",
+                                "methodName": "on",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SwaggerConfig.java",
+                                "className": "SwaggerConfig",
+                                "methodName": "apiDocket",
+                                "returnType": "Docket"
+                            },
+                            {
+                                "fileName": "SwaggerConfig.java",
+                                "className": "SwaggerConfig",
+                                "methodName": "getApiInfo",
+                                "returnType": "ApiInfo"
+                            },
+                            {
+                                "fileName": "OrderCommandController.java",
+                                "className": "OrderCommandController",
+                                "methodName": "createOrder",
+                                "returnType": "CompletableFuture"
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "getItemType",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "setItemType",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "getPrice",
+                                "returnType": "BigDecimal"
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "setPrice",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "getCurrency",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "setCurrency",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "OrderCommandServiceImpl.java",
+                                "className": "OrderCommandServiceImpl",
+                                "methodName": "createOrder",
+                                "returnType": "CompletableFuture"
+                            },
+                            {
+                                "fileName": "OrderServiceApplicationTests.java",
+                                "className": "OrderServiceApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "OrderCommandController.java",
+                                "className": "OrderCommandController",
+                                "methodName": "createOrder",
+                                "generic_return_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderCommandServiceImpl.java",
+                                "className": "OrderCommandServiceImpl",
+                                "methodName": "createOrder",
+                                "generic_return_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "downloadFileFromURL",
+                                "param_types": [
+                                    "String",
+                                    "File"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderServiceApplication.java",
+                                "className": "OrderServiceApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderAggregate.java",
+                                "className": "OrderAggregate",
+                                "methodName": "on",
+                                "param_types": [
+                                    "OrderCreatedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderAggregate.java",
+                                "className": "OrderAggregate",
+                                "methodName": "on",
+                                "param_types": [
+                                    "UpdateOrderStatusCommand"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderAggregate.java",
+                                "className": "OrderAggregate",
+                                "methodName": "on",
+                                "param_types": [
+                                    "OrderUpdatedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderCommandController.java",
+                                "className": "OrderCommandController",
+                                "methodName": "createOrder",
+                                "param_types": [
+                                    "OrderCreateDTO"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "setItemType",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "setPrice",
+                                "param_types": [
+                                    "BigDecimal"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderCreateDTO.java",
+                                "className": "OrderCreateDTO",
+                                "methodName": "setCurrency",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "param_types": [
+                                    "OrderCreatedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "param_types": [
+                                    "InvoiceCreatedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "param_types": [
+                                    "OrderShippedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "param_types": [
+                                    "OrderUpdatedEvent"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderCommandServiceImpl.java",
+                                "className": "OrderCommandServiceImpl",
+                                "methodName": "createOrder",
+                                "param_types": [
+                                    "OrderCreateDTO"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "main",
+                                "local_types": [
+                                    "File",
+                                    "File",
+                                    "String",
+                                    "File"
+                                ]
+                            },
+                            {
+                                "fileName": "MavenWrapperDownloader.java",
+                                "className": "MavenWrapperDownloader",
+                                "methodName": "downloadFileFromURL",
+                                "local_types": [
+                                    "URL",
+                                    "ReadableByteChannel",
+                                    "FileOutputStream"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "local_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "OrderManagementSaga.java",
+                                "className": "OrderManagementSaga",
+                                "methodName": "handle",
+                                "local_types": [
+                                    "String"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/order-service\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "payment-service",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "6",
+                "locs": "132",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-boot-starter-data-jpa",
+                    "spring-boot-starter-web",
+                    "axon-spring-boot-starter",
+                    "h2",
+                    "springfox-swagger2",
+                    "springfox-swagger-ui",
+                    "core-apis",
+                    "javax.inject",
+                    "spring-boot-starter-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "payment-service",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "PaymentServiceApplication",
+                            "src.main.com.progressivecoder.paymentmanagement.paymentservice.PaymentServiceApplication"
+                        ],
+                        [
+                            "InvoiceAggregate",
+                            "src.main.com.progressivecoder.paymentmanagement.paymentservice.aggregates.InvoiceAggregate"
+                        ],
+                        [
+                            "PaymentServiceApplicationTests",
+                            "src.test.com.progressivecoder.paymentmanagement.paymentservice.PaymentServiceApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\PaymentServiceApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\PaymentServiceApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/com.progressivecoder.ecommerce.commands.CreateInvoiceCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/com.progressivecoder.ecommerce.events.InvoiceCreatedEvent",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/org.axonframework.commandhandling.CommandHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/org.axonframework.eventsourcing.EventSourcingHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/org.axonframework.modelling.command.AggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/org.axonframework.modelling.command.AggregateLifecycle",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/org.axonframework.spring.stereotype.Aggregate"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\PaymentServiceApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/Aggregate",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/AggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/CommandHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/EventSourcingHandler"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\PaymentServiceApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java/on"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "paymentId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "invoiceStatus",
+                            "type": "InvoiceStatus"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "invoiceCreatedEvent",
+                            "type": "InvoiceCreatedEvent"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\PaymentServiceApplication.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceAggregate.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\aggregates\\InvoiceStatus.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\test\\java\\com\\progressivecoder\\paymentmanagement\\paymentservice\\PaymentServiceApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "PaymentServiceApplication.java",
+                                "className": "PaymentServiceApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "InvoiceAggregate.java",
+                                "className": "InvoiceAggregate",
+                                "methodName": "on",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "PaymentServiceApplicationTests.java",
+                                "className": "PaymentServiceApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "PaymentServiceApplication.java",
+                                "className": "PaymentServiceApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "InvoiceAggregate.java",
+                                "className": "InvoiceAggregate",
+                                "methodName": "on",
+                                "param_types": [
+                                    "InvoiceCreatedEvent"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/payment-service\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "shipping-service",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "4",
+                "locs": "116",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-boot-starter-data-jpa",
+                    "spring-boot-starter-web",
+                    "axon-spring-boot-starter",
+                    "h2",
+                    "springfox-swagger2",
+                    "springfox-swagger-ui",
+                    "core-apis",
+                    "javax.inject",
+                    "spring-boot-starter-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "shipping-service",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "ShippingServiceApplication",
+                            "src.main.com.progressivecoder.shippingmanagement.shippingservice.ShippingServiceApplication"
+                        ],
+                        [
+                            "ShippingAggregate",
+                            "src.main.com.progressivecoder.shippingmanagement.shippingservice.aggregates.ShippingAggregate"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\ShippingServiceApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\ShippingServiceApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/com.progressivecoder.ecommerce.commands.CreateShippingCommand",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/com.progressivecoder.ecommerce.events.OrderShippedEvent",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/org.axonframework.commandhandling.CommandHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/org.axonframework.eventsourcing.EventSourcingHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/org.axonframework.modelling.command.AggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/org.axonframework.modelling.command.AggregateLifecycle",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/org.axonframework.spring.stereotype.Aggregate"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\ShippingServiceApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/Aggregate",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/AggregateIdentifier",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/CommandHandler",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/EventSourcingHandler"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\ShippingServiceApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java/on"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "shippingId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "paymentId",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderShippedEvent",
+                            "type": "OrderShippedEvent"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\ShippingServiceApplication.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\java\\com\\progressivecoder\\shippingmanagement\\shippingservice\\aggregates\\ShippingAggregate.java",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\resources\\application.properties"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "ShippingServiceApplication.java",
+                                "className": "ShippingServiceApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ShippingAggregate.java",
+                                "className": "ShippingAggregate",
+                                "methodName": "on",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "ShippingServiceApplication.java",
+                                "className": "ShippingServiceApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ShippingAggregate.java",
+                                "className": "ShippingAggregate",
+                                "methodName": "on",
+                                "param_types": [
+                                    "OrderShippedEvent"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/saga-pattern-axon-spring-boot-sample-master/shipping-service\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [
+            "core-apis",
+            "order-service",
+            "payment-service",
+            "shipping-service"
+        ],
+        "selectedMicroservices": [
+            "payment-service",
+            "order-service",
+            "shipping-service"
+        ],
+        "selectedMicroservicesV2": [
+            "core-apis",
+            "order-service",
+            "payment-service",
+            "shipping-service"
+        ]
+    }
+}

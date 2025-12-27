@@ -1,0 +1,2218 @@
+{
+    "system": {
+        "folders": [
+            ".git",
+            ".idea",
+            "card-service",
+            "card-statement-composite",
+            "config-server",
+            "discovery-service",
+            "edge-server",
+            "monitor-dashboard",
+            "OutputDetection",
+            "rabbit-mq-server",
+            "statement-service",
+            "turbine"
+        ],
+        "dependencies": [],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\docker-compose.local.yml",
+            "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\docker-compose.yml",
+            "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\pom.xml",
+            "G:\\AntiPattern_Detection\\projects\\spring-netflix-oss-microservices\\.idea\\compiler.xml",
+            "G:\\AntiPattern_Detection\\projects\\spring-netflix-oss-microservices\\.idea\\encodings.xml",
+            "G:\\AntiPattern_Detection\\projects\\spring-netflix-oss-microservices\\.idea\\jarRepositories.xml",
+            "G:\\AntiPattern_Detection\\projects\\spring-netflix-oss-microservices\\.idea\\misc.xml",
+            "G:\\AntiPattern_Detection\\projects\\spring-netflix-oss-microservices\\.idea\\vcs.xml",
+            "G:\\AntiPattern_Detection\\projects\\spring-netflix-oss-microservices\\.idea\\workspace.xml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "card-service",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "93.59"
+                },
+                "nb_files": "9",
+                "locs": "477",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-cloud-starter-config",
+                    "spring-cloud-starter-eureka",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "card-service",
+                                "files": [
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java",
+                                        "caller": "",
+                                        "callee": "",
+                                        "requestParam": [
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "/api",
+                                                "uri": "/cards",
+                                                "method_name": "getCards"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "/api",
+                                                "uri": "/card/{cardId}",
+                                                "method_name": "getCard"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "/api",
+                                                "uri": "/new-card",
+                                                "method_name": "createCard"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CardServiceApplication",
+                            "src.main.com.spring.netflix.oss.microservices.CardServiceApplication"
+                        ],
+                        [
+                            "CardServiceController",
+                            "src.main.com.spring.netflix.oss.microservices.api.CardServiceController"
+                        ],
+                        [
+                            "Card",
+                            "src.main.com.spring.netflix.oss.microservices.model.Card"
+                        ],
+                        [
+                            "CardServiceApplicationTests",
+                            "src.test.com.spring.netflix.oss.microservices.CardServiceApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplication.java/org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/java.util.ArrayList",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/java.util.Optional",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/javax.annotation.PostConstruct",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/org.springframework.web.bind.annotation.PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/org.springframework.web.bind.annotation.RequestBody",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/org.springframework.web.bind.annotation.RequestMethod",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/com.spring.netflix.oss.microservices.model.Card",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/com.fasterxml.jackson.annotation.JsonIgnoreProperties"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplication.java/EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/PostConstruct",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/RequestBody",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/JsonIgnoreProperties",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/init",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/getCards",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/getCard",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java/createCard",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/getId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/setId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/getCardHolderName",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/setCardHolderName",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/getPan",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/setPan",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/getValidDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/setValidDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java/toString"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "fakeRepo",
+                            "type": "List<Card>"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardHolderName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pan",
+                            "type": "String"
+                        },
+                        {
+                            "name": "validDate",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "newCard",
+                            "type": "Card"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardHolderName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pan",
+                            "type": "String"
+                        },
+                        {
+                            "name": "validDate",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [
+                        {
+                            "url": "http://localhost:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\resources\\bootstrap.yml"
+                        },
+                        {
+                            "url": "http://config-server:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\resources\\bootstrap.yml"
+                        }
+                    ],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Card.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\test\\java\\com\\spring\\netflix\\oss\\microservices\\CardServiceApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 3,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java",
+                                "line": 36,
+                                "method": "GET",
+                                "code": "@RequestMapping(value=\"/cards\", method = RequestMethod.GET)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java",
+                                "line": 41,
+                                "method": "GET",
+                                "code": "@RequestMapping(value=\"/card/{cardId}\", method = RequestMethod.GET)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\CardServiceController.java",
+                                "line": 55,
+                                "method": "POST",
+                                "code": "@RequestMapping(value = \"/new-card\", method = RequestMethod.POST, headers = \"Accept=application/json\")"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "CardServiceApplication.java",
+                                "className": "CardServiceApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CardServiceController.java",
+                                "className": "CardServiceController",
+                                "methodName": "init",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CardServiceController.java",
+                                "className": "CardServiceController",
+                                "methodName": "getCards",
+                                "returnType": "List"
+                            },
+                            {
+                                "fileName": "CardServiceController.java",
+                                "className": "CardServiceController",
+                                "methodName": "getCard",
+                                "returnType": "Card"
+                            },
+                            {
+                                "fileName": "CardServiceController.java",
+                                "className": "CardServiceController",
+                                "methodName": "createCard",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "getId",
+                                "returnType": "Long"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setId",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "getCardHolderName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setCardHolderName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "getPan",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setPan",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "getValidDate",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setValidDate",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "toString",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "CardServiceApplicationTests.java",
+                                "className": "CardServiceApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "CardServiceController.java",
+                                "className": "CardServiceController",
+                                "methodName": "getCards",
+                                "generic_return_types": [
+                                    "Card"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "CardServiceApplication.java",
+                                "className": "CardServiceApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "CardServiceController.java",
+                                "className": "CardServiceController",
+                                "methodName": "getCard",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "CardServiceController.java",
+                                "className": "CardServiceController",
+                                "methodName": "createCard",
+                                "param_types": [
+                                    "Card"
+                                ]
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setId",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setCardHolderName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setPan",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "Card.java",
+                                "className": "Card",
+                                "methodName": "setValidDate",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-service\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "card-statement-composite",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "95.49"
+                },
+                "nb_files": "14",
+                "locs": "549",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-cloud-starter-config",
+                    "spring-cloud-starter-eureka",
+                    "spring-cloud-starter-feign",
+                    "spring-boot-starter-web",
+                    "spring-cloud-starter-hystrix",
+                    "spring-cloud-starter-bus-amqp",
+                    "spring-cloud-netflix-hystrix-amqp",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "card-statement-composite",
+                                "files": [
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardClient.java",
+                                        "caller": "card-statement-composite",
+                                        "callee": [
+                                            "card-service"
+                                        ],
+                                        "requestParam": []
+                                    },
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java",
+                                        "caller": "",
+                                        "callee": "",
+                                        "requestParam": [
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "",
+                                                "uri": "cards",
+                                                "method_name": "getCards"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "",
+                                                "uri": "card/{cardId}",
+                                                "method_name": "getCard"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "",
+                                                "uri": "new-card",
+                                                "method_name": "createCard"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java",
+                                        "caller": "",
+                                        "callee": "",
+                                        "requestParam": [
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "/api",
+                                                "uri": "/statement-by-card",
+                                                "method_name": "getStatementByCardId"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementClient.java",
+                                        "caller": "card-statement-composite",
+                                        "callee": [
+                                            "statement-service"
+                                        ],
+                                        "requestParam": []
+                                    },
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java",
+                                        "caller": "",
+                                        "callee": "",
+                                        "requestParam": [
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "",
+                                                "uri": "statements",
+                                                "method_name": "getStatements"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "",
+                                                "uri": "statement/{statementId}",
+                                                "method_name": "getStatament"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "",
+                                                "uri": "statement",
+                                                "method_name": "getStatements"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "CardStatementCompositeApplication",
+                            "src.main.com.spring.netflix.oss.microservices.CardStatementCompositeApplication"
+                        ],
+                        [
+                            "CardVO",
+                            "src.main.com.spring.netflix.oss.microservices.model.CardVO"
+                        ],
+                        [
+                            "StatementVO",
+                            "src.main.com.spring.netflix.oss.microservices.model.StatementVO"
+                        ],
+                        [
+                            "CardStatementServiceController",
+                            "src.main.com.spring.netflix.oss.microservices.service.CardStatementServiceController"
+                        ],
+                        [
+                            "CardStatementCompositeApplicationTests",
+                            "src.test.com.spring.netflix.oss.microservices.CardStatementCompositeApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/org.springframework.cloud.netflix.eureka.EnableEurekaClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/org.springframework.cloud.netflix.feign.EnableFeignClients",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/com.fasterxml.jackson.annotation.JsonIgnoreProperties",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/com.fasterxml.jackson.annotation.JsonIgnoreProperties",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardClient.java/org.springframework.cloud.netflix.feign.FeignClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/org.springframework.web.bind.annotation.RequestMethod.GET",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/org.springframework.web.bind.annotation.RequestMethod.POST",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/org.springframework.http.MediaType",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/org.springframework.web.bind.annotation.PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/org.springframework.web.bind.annotation.RequestBody",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/com.spring.netflix.oss.microservices.model.CardVO",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/java.util.HashMap",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/java.util.Map",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/org.springframework.http.HttpStatus",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/org.springframework.http.ResponseEntity",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/org.springframework.web.bind.annotation.RequestMethod",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/org.springframework.web.bind.annotation.RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/com.spring.netflix.oss.microservices.model.CardVO",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/com.spring.netflix.oss.microservices.model.StatementVO",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementClient.java/org.springframework.cloud.netflix.feign.FeignClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/org.springframework.web.bind.annotation.RequestMethod.GET",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/org.springframework.web.bind.annotation.PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/org.springframework.web.bind.annotation.RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/com.spring.netflix.oss.microservices.model.StatementVO"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/EnableEurekaClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/EnableFeignClients",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/EnableCircuitBreaker",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/JsonIgnoreProperties",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/JsonIgnoreProperties",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardClient.java/FeignClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/RequestBody",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/HystrixCommand",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementClient.java/FeignClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/RequestParam"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/getId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/setId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/getCardHolderName",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/setCardHolderName",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/getPan",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/setPan",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/getValidDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/setValidDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java/toString",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/getId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/setId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/getCardId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/setCardId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/getOperationDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/setOperationDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/getValue",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/setValue",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java/toString",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/getCards",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/getCard",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java/createCard",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/getStatementByCardId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java/defaultCardStatementError",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/getStatements",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java/getStatament"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardHolderName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pan",
+                            "type": "String"
+                        },
+                        {
+                            "name": "validDate",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "operationDate",
+                            "type": "String"
+                        },
+                        {
+                            "name": "value",
+                            "type": "String"
+                        },
+                        {
+                            "name": "PREFIX",
+                            "type": "String"
+                        },
+                        {
+                            "name": "cardClient",
+                            "type": "CardClient"
+                        },
+                        {
+                            "name": "statementClient",
+                            "type": "StatementClient"
+                        },
+                        {
+                            "name": "PREFIX",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "response",
+                            "type": "Map<CardVO, List<StatementVO>>"
+                        },
+                        {
+                            "name": "response",
+                            "type": "Map<CardVO, List<StatementVO>>"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardHolderName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pan",
+                            "type": "String"
+                        },
+                        {
+                            "name": "validDate",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "operationDate",
+                            "type": "String"
+                        },
+                        {
+                            "name": "value",
+                            "type": "String"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "card",
+                            "type": "CardVO"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "statementId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        }
+                    ],
+                    "http": [
+                        {
+                            "url": "http://localhost:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\resources\\bootstrap.yml"
+                        },
+                        {
+                            "url": "http://config-server:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\resources\\bootstrap.yml"
+                        }
+                    ],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\CardVO.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\StatementVO.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardClient.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardService.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementClient.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementService.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\test\\java\\com\\spring\\netflix\\oss\\microservices\\CardStatementCompositeApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 1,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardStatementServiceController.java",
+                                "line": 30,
+                                "method": "GET",
+                                "code": "@RequestMapping(value=\"/statement-by-card\", method=RequestMethod.GET)"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "CardStatementCompositeApplication.java",
+                                "className": "CardStatementCompositeApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "getId",
+                                "returnType": "Long"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setId",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "getCardHolderName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setCardHolderName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "getPan",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setPan",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "getValidDate",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setValidDate",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "toString",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "getId",
+                                "returnType": "Long"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setId",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "getCardId",
+                                "returnType": "Long"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setCardId",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "getOperationDate",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setOperationDate",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "getValue",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setValue",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "toString",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "getStatementByCardId",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "defaultCardStatementError",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "CardStatementCompositeApplicationTests.java",
+                                "className": "CardStatementCompositeApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "getStatementByCardId",
+                                "generic_return_types": [
+                                    "Map"
+                                ]
+                            },
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "defaultCardStatementError",
+                                "generic_return_types": [
+                                    "Map"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "CardStatementCompositeApplication.java",
+                                "className": "CardStatementCompositeApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setId",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setCardHolderName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setPan",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "CardVO.java",
+                                "className": "CardVO",
+                                "methodName": "setValidDate",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setId",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setCardId",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setOperationDate",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "StatementVO.java",
+                                "className": "StatementVO",
+                                "methodName": "setValue",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "getStatementByCardId",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "defaultCardStatementError",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "getStatementByCardId",
+                                "local_types": [
+                                    "Map"
+                                ]
+                            },
+                            {
+                                "fileName": "CardStatementServiceController.java",
+                                "className": "CardStatementServiceController",
+                                "methodName": "defaultCardStatementError",
+                                "local_types": [
+                                    "Map"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/card-statement-composite\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "config-server",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "53.20"
+                },
+                "nb_files": "7",
+                "locs": "352",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-cloud-config-server",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "config-server",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "ConfigServerApplication",
+                            "src.main.com.spring.netflix.oss.microservices.ConfigServerApplication"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\ConfigServerApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\ConfigServerApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\ConfigServerApplication.java/org.springframework.cloud.config.server.EnableConfigServer"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\ConfigServerApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\ConfigServerApplication.java/EnableConfigServer"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\ConfigServerApplication.java/main"
+                    ],
+                    "Fields": [],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\ConfigServerApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\resources\\application.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\resources\\bootstrap.yml"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "ConfigServerApplication.java",
+                                "className": "ConfigServerApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "ConfigServerApplication.java",
+                                "className": "ConfigServerApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\resources\\application.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/config-server\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "discovery-service",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "70.55"
+                },
+                "nb_files": "7",
+                "locs": "368",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-cloud-starter-config",
+                    "spring-cloud-starter-eureka-server",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "discovery-service",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "DiscoveryServiceApplication",
+                            "src.main.com.spring.netflix.oss.microservices.DiscoveryServiceApplication"
+                        ],
+                        [
+                            "DiscoveryServiceApplicationTests",
+                            "src.test.com.spring.netflix.oss.microservices.DiscoveryServiceApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplication.java/org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplication.java/EnableEurekaServer"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplication.java/main"
+                    ],
+                    "Fields": [],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [
+                        {
+                            "url": "http://localhost:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\resources\\bootstrap.yml"
+                        },
+                        {
+                            "url": "http://config-server:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\resources\\bootstrap.yml"
+                        }
+                    ],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\test\\java\\com\\spring\\netflix\\oss\\microservices\\DiscoveryServiceApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "DiscoveryServiceApplication.java",
+                                "className": "DiscoveryServiceApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "DiscoveryServiceApplicationTests.java",
+                                "className": "DiscoveryServiceApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "DiscoveryServiceApplication.java",
+                                "className": "DiscoveryServiceApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/discovery-service\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "edge-server",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "71.92"
+                },
+                "nb_files": "7",
+                "locs": "374",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-cloud-starter-config",
+                    "spring-cloud-starter-eureka",
+                    "spring-cloud-starter-zuul",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "edge-server",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "EdgeServerApplication",
+                            "src.main.com.spring.netflix.oss.microservices.EdgeServerApplication"
+                        ],
+                        [
+                            "EdgeServerApplicationTests",
+                            "src.test.com.spring.netflix.oss.microservices.EdgeServerApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/org.springframework.cloud.netflix.zuul.EnableZuulProxy"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/EnableZuulProxy"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java/main"
+                    ],
+                    "Fields": [],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [
+                        {
+                            "url": "http://localhost:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\resources\\bootstrap.yml"
+                        },
+                        {
+                            "url": "http://config-server:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\resources\\bootstrap.yml"
+                        }
+                    ],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\test\\java\\com\\spring\\netflix\\oss\\microservices\\EdgeServerApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "EdgeServerApplication.java",
+                                "className": "EdgeServerApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "EdgeServerApplicationTests.java",
+                                "className": "EdgeServerApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "EdgeServerApplication.java",
+                                "className": "EdgeServerApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/edge-server\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "monitor-dashboard",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "74.54"
+                },
+                "nb_files": "7",
+                "locs": "383",
+                "dependencies": [
+                    "spring-boot-starter-amqp",
+                    "spring-cloud-starter-bus-amqp",
+                    "spring-cloud-starter-hystrix-dashboard",
+                    "spring-cloud-starter-config",
+                    "spring-cloud-starter-eureka",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "monitor-dashboard",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "MonitorDashboardApplication",
+                            "src.main.com.spring.netflix.oss.microservices.MonitorDashboardApplication"
+                        ],
+                        [
+                            "MonitorDashboardApplicationTests",
+                            "src.test.com.spring.netflix.oss.microservices.MonitorDashboardApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/org.springframework.stereotype.Controller",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/org.springframework.web.bind.annotation.RequestMapping"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/EnableHystrixDashboard",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/Controller",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/RequestMapping"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java/home"
+                    ],
+                    "Fields": [],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [
+                        {
+                            "url": "http://localhost:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\resources\\bootstrap.yml"
+                        }
+                    ],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\test\\java\\com\\spring\\netflix\\oss\\microservices\\MonitorDashboardApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "MonitorDashboardApplication.java",
+                                "className": "MonitorDashboardApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "MonitorDashboardApplication.java",
+                                "className": "MonitorDashboardApplication",
+                                "methodName": "home",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "MonitorDashboardApplicationTests.java",
+                                "className": "MonitorDashboardApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "MonitorDashboardApplication.java",
+                                "className": "MonitorDashboardApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/monitor-dashboard\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "statement-service",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "93.46"
+                },
+                "nb_files": "9",
+                "locs": "478",
+                "dependencies": [
+                    "spring-boot-starter-actuator",
+                    "spring-cloud-starter-config",
+                    "spring-cloud-starter-eureka",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "statement-service",
+                                "files": [
+                                    {
+                                        "name": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java",
+                                        "caller": "",
+                                        "callee": "",
+                                        "requestParam": [
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "/api",
+                                                "uri": "/statements",
+                                                "method_name": "getStatements"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "/api",
+                                                "uri": "/statement/{statementId}",
+                                                "method_name": "getStatament"
+                                            },
+                                            {
+                                                "method_type": "-",
+                                                "@RequestMapping": "/api",
+                                                "uri": "/statement",
+                                                "method_name": "getStatements"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "StatementServiceApplication",
+                            "src.main.com.spring.netflix.oss.microservices.StatementServiceApplication"
+                        ],
+                        [
+                            "StatementServiceController",
+                            "src.main.com.spring.netflix.oss.microservices.api.StatementServiceController"
+                        ],
+                        [
+                            "Statement",
+                            "src.main.com.spring.netflix.oss.microservices.model.Statement"
+                        ],
+                        [
+                            "StatementServiceApplicationTests",
+                            "src.test.com.spring.netflix.oss.microservices.StatementServiceApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplication.java/org.springframework.cloud.client.discovery.EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/java.util.ArrayList",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/java.util.Optional",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/java.util.stream.Collectors",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/javax.annotation.PostConstruct",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/org.springframework.web.bind.annotation.PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/org.springframework.web.bind.annotation.RequestMethod",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/org.springframework.web.bind.annotation.RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/com.spring.netflix.oss.microservices.model.Statement",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/com.fasterxml.jackson.annotation.JsonIgnoreProperties"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplication.java/EnableDiscoveryClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/PostConstruct",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/PathVariable",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/JsonIgnoreProperties",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/init",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/getStatements",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java/getStatament",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/getCardId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/setCardId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/getOperationDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/setOperationDate",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/getId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/setId",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/getValue",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/setValue",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java/toString"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "fakeRepo",
+                            "type": "List<Statement>"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "operationDate",
+                            "type": "String"
+                        },
+                        {
+                            "name": "value",
+                            "type": "String"
+                        }
+                    ],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "statementId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "cardId",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "operationDate",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "value",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [
+                        {
+                            "url": "http://localhost:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\resources\\bootstrap.yml"
+                        },
+                        {
+                            "url": "http://config-server:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\resources\\bootstrap.yml"
+                        }
+                    ],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\mvnw",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\mvnw.cmd",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\model\\Statement.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\test\\java\\com\\spring\\netflix\\oss\\microservices\\StatementServiceApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 3,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java",
+                                "line": 40,
+                                "method": "GET",
+                                "code": "@RequestMapping(value=\"/statements\", method = RequestMethod.GET)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java",
+                                "line": 45,
+                                "method": "GET",
+                                "code": "@RequestMapping(value=\"/statement/{statementId}\", method = RequestMethod.GET)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\api\\StatementServiceController.java",
+                                "line": 59,
+                                "method": "GET",
+                                "code": "@RequestMapping(value=\"/statement\", method = RequestMethod.GET)"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "StatementServiceApplication.java",
+                                "className": "StatementServiceApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "init",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "getStatements",
+                                "returnType": "List"
+                            },
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "getStatament",
+                                "returnType": "Statement"
+                            },
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "getStatements",
+                                "returnType": "List"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "getCardId",
+                                "returnType": "Long"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setCardId",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "getOperationDate",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setOperationDate",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "getId",
+                                "returnType": "Long"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setId",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "getValue",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setValue",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "toString",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "StatementServiceApplicationTests.java",
+                                "className": "StatementServiceApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "getStatements",
+                                "generic_return_types": [
+                                    "Statement"
+                                ]
+                            },
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "getStatements",
+                                "generic_return_types": [
+                                    "Statement"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "StatementServiceApplication.java",
+                                "className": "StatementServiceApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "getStatament",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "StatementServiceController.java",
+                                "className": "StatementServiceController",
+                                "methodName": "getStatements",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setCardId",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setOperationDate",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setId",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "Statement.java",
+                                "className": "Statement",
+                                "methodName": "setValue",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/statement-service\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            },
+            {
+                "name": "turbine",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "71.98"
+                },
+                "nb_files": "5",
+                "locs": "135",
+                "dependencies": [
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-undertow",
+                    "spring-cloud-netflix-turbine-amqp",
+                    "spring-cloud-starter-eureka",
+                    "spring-cloud-starter-config",
+                    "spring-boot-starter-test",
+                    "spring-cloud-dependencies"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "turbine",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "TurbineApplication",
+                            "src.main.com.spring.netflix.oss.microservices.TurbineApplication"
+                        ],
+                        [
+                            "TurbineApplicationTests",
+                            "src.test.com.spring.netflix.oss.microservices.TurbineApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/org.springframework.boot.builder.SpringApplicationBuilder",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/org.springframework.cloud.netflix.eureka.EnableEurekaClient",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/org.springframework.cloud.netflix.turbine.amqp.EnableTurbineAmqp"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/EnableTurbineAmqp",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/EnableEurekaClient"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java/main"
+                    ],
+                    "Fields": [],
+                    "Local Variables": [],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [
+                        {
+                            "url": "http://localhost:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\resources\\bootstrap.yml"
+                        },
+                        {
+                            "url": "http://config-server:9090",
+                            "url path": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\resources\\bootstrap.yml"
+                        }
+                    ],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\Dockerfile",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplication.java",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\test\\java\\com\\spring\\netflix\\oss\\microservices\\TurbineApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "TurbineApplication.java",
+                                "className": "TurbineApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "TurbineApplicationTests.java",
+                                "className": "TurbineApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "TurbineApplication.java",
+                                "className": "TurbineApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": []
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\src\\main\\resources\\bootstrap.yml",
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [
+                        "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices/turbine\\Dockerfile"
+                    ],
+                    "images": [
+                        "java:8-jre"
+                    ]
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [
+            {
+                "caller": "card-statement-composite",
+                "caller file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardClient.java",
+                "mached uri": "",
+                "callee": "card-service",
+                "callee file": "",
+                "callee method type": "feign client"
+            },
+            {
+                "caller": "card-statement-composite",
+                "caller file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementClient.java",
+                "mached uri": "",
+                "callee": "statement-service",
+                "callee file": "",
+                "callee method type": "feign client"
+            }
+        ],
+        "reducedrelations": [
+            {
+                "caller": "card-statement-composite",
+                "caller file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\CardClient.java",
+                "mached uri": "",
+                "callee": "card-service",
+                "callee file": "",
+                "callee method type": "feign client"
+            },
+            {
+                "caller": "card-statement-composite",
+                "caller file": "G:/AntiPattern_Detection/projects/spring-netflix-oss-microservices\\card-statement-composite\\src\\main\\java\\com\\spring\\netflix\\oss\\microservices\\service\\StatementClient.java",
+                "mached uri": "",
+                "callee": "statement-service",
+                "callee file": "",
+                "callee method type": "feign client"
+            }
+        ],
+        "cycles": [],
+        "candidateMicroservices": [
+            "card-service",
+            "card-statement-composite",
+            "config-server",
+            "discovery-service",
+            "edge-server",
+            "monitor-dashboard",
+            "statement-service",
+            "turbine"
+        ],
+        "selectedMicroservices": [
+            "card-service",
+            "card-statement-composite",
+            "discovery-service",
+            "statement-service",
+            "edge-server",
+            "monitor-dashboard",
+            "turbine",
+            "config-server"
+        ],
+        "selectedMicroservicesV2": [
+            "card-service",
+            "card-statement-composite",
+            "config-server",
+            "discovery-service",
+            "edge-server",
+            "monitor-dashboard",
+            "statement-service",
+            "turbine"
+        ]
+    }
+}

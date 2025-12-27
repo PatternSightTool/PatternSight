@@ -1,0 +1,1594 @@
+{
+    "system": {
+        "folders": [
+            "src"
+        ],
+        "dependencies": [
+            "spring-boot-starter-web",
+            "spring-boot-starter-data-redis",
+            "spring-session-data-redis",
+            "fastjson",
+            "janino"
+        ],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/spring-session2-master\\pom.xml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "95.18"
+                },
+                "nb_files": "28",
+                "locs": "861",
+                "dependencies": [
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-data-redis",
+                    "spring-session-data-redis",
+                    "fastjson",
+                    "janino"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "Application",
+                            "src.main.com.yzb.lee.springsession.Application"
+                        ],
+                        [
+                            "RedisConfig",
+                            "src.main.com.yzb.lee.springsession.config.RedisConfig"
+                        ],
+                        [
+                            "UserDaoImpl",
+                            "src.main.com.yzb.lee.springsession.dao.impl.UserDaoImpl"
+                        ],
+                        [
+                            "ConsumerLoanInfo",
+                            "src.main.com.yzb.lee.springsession.domain.ConsumerLoanInfo"
+                        ],
+                        [
+                            "DomainTest",
+                            "src.main.com.yzb.lee.springsession.domain.DomainTest"
+                        ],
+                        [
+                            "MyBean",
+                            "src.main.com.yzb.lee.springsession.domain.MyBean"
+                        ],
+                        [
+                            "LocalException",
+                            "src.main.com.yzb.lee.springsession.exception.LocalException"
+                        ],
+                        [
+                            "DaoSomethingAfterAppStart",
+                            "src.main.com.yzb.lee.springsession.init.DaoSomethingAfterAppStart"
+                        ],
+                        [
+                            "DaoSomethingAfterAppStart2",
+                            "src.main.com.yzb.lee.springsession.init.DaoSomethingAfterAppStart2"
+                        ],
+                        [
+                            "RedisDataStructureServiceImpl",
+                            "src.main.com.yzb.lee.springsession.service.impl.RedisDataStructureServiceImpl"
+                        ],
+                        [
+                            "UserServiceImpl",
+                            "src.main.com.yzb.lee.springsession.service.impl.UserServiceImpl"
+                        ],
+                        [
+                            "RedisDataStructureController",
+                            "src.main.com.yzb.lee.springsession.web.RedisDataStructureController"
+                        ],
+                        [
+                            "SampleController",
+                            "src.main.com.yzb.lee.springsession.web.SampleController"
+                        ],
+                        [
+                            "SpringRestTemplateController",
+                            "src.main.com.yzb.lee.springsession.web.SpringRestTemplateController"
+                        ],
+                        [
+                            "SpringRestTemplateTest",
+                            "src.test.com.yzb.lee.springsession.SpringRestTemplateTest"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/org.springframework.boot.Banner",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/org.springframework.boot.autoconfigure.EnableAutoConfiguration",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/org.springframework.context.annotation.ComponentScan",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/java.util.HashSet",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/java.util.Set",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.cache.CacheManager",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.cache.annotation.EnableCaching",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.context.annotation.PropertySource",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.cache.RedisCacheManager",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.connection.RedisClusterConfiguration",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.connection.RedisConnectionFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.connection.RedisNode",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.connection.jedis.JedisConnectionFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.core.RedisTemplate",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.serializer.RedisSerializer",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.data.redis.serializer.SerializationException",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/org.springframework.util.StringUtils",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/redis.clients.jedis.JedisPoolConfig",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/com.alibaba.fastjson.JSON",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/com.alibaba.fastjson.serializer.SerializerFeature",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/com.yzb.lee.springsession.exception.LocalException",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\impl\\UserDaoImpl.java/org.springframework.stereotype.Repository",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\impl\\UserDaoImpl.java/com.yzb.lee.springsession.dao.IUserDao",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/java.math.BigDecimal",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/org.springframework.boot.ApplicationArguments",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/com.alibaba.fastjson.JSON",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/org.springframework.boot.CommandLineRunner",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/org.springframework.core.annotation.Order",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/org.springframework.boot.ApplicationArguments",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/org.springframework.boot.ApplicationRunner",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/org.springframework.core.annotation.Order",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/org.springframework.stereotype.Component",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IRedisDataStructureService.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/javax.annotation.Resource",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/org.springframework.beans.factory.annotation.Qualifier",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/org.springframework.data.redis.core.ListOperations",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/org.springframework.data.redis.core.RedisTemplate",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/org.springframework.stereotype.Service",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/com.yzb.lee.springsession.service.IRedisDataStructureService",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/org.slf4j.Logger",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/org.slf4j.LoggerFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/org.springframework.cache.annotation.Cacheable",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/org.springframework.stereotype.Service",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/com.yzb.lee.springsession.dao.IUserDao",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/com.yzb.lee.springsession.service.IUserService",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/org.springframework.web.bind.annotation.RequestMethod",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/org.springframework.web.bind.annotation.RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/com.yzb.lee.springsession.service.IRedisDataStructureService",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/java.util.Enumeration",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/java.util.HashMap",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/java.util.Map",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/javax.servlet.http.HttpServletRequest",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/javax.servlet.http.HttpServletResponse",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/javax.servlet.http.HttpSession",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/org.springframework.web.bind.annotation.RequestMethod",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/org.springframework.web.bind.annotation.RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/com.yzb.lee.springsession.domain.DomainTest",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/com.yzb.lee.springsession.service.IUserService",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/org.springframework.web.bind.annotation.RequestBody",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/org.springframework.web.bind.annotation.RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/org.springframework.web.bind.annotation.RestController",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/com.alibaba.fastjson.JSON",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/com.yzb.lee.springsession.domain.ConsumerLoanInfo"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/EnableAutoConfiguration",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/ComponentScan",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/EnableRedisHttpSession",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/EnableCaching",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/PropertySource",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/Value",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/Bean",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/SuppressWarnings",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\impl\\UserDaoImpl.java/Repository",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\impl\\UserDaoImpl.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/Component",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/Component",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/Order",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/Value",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/Component",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/Order",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/Service",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/Qualifier",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/Resource",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/Service",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/Override",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/Cacheable",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/Autowired",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/RequestParam",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/RequestBody"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java/main",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/cacheManager",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/redisTemplate",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/connectionFactory",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/redisSerializer",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/serialize",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/deserialize",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/jedisPoolConfig",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java/jedisClusterConfiguration",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\IUserDao.java/getName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\impl\\UserDaoImpl.java/getName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getAppNo",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setAppNo",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getContractLmt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setContractLmt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getInterestRate",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setInterestRate",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getProductName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setProductName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getProductCd",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setProductCd",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getOrderLmtAmt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setOrderLmtAmt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getBankCode",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setBankCode",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getBankName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setBankName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getBankCardNo",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setBankCardNo",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getBankCellPhone",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setBankCellPhone",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getBankCustName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setBankCustName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getBankCustId",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setBankCustId",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getGender",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setGender",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getCellPhone",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setCellPhone",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getIdNo",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setIdNo",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getLoanTerm",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setLoanTerm",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getAffProvince",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setAffProvince",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/getAffCity",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java/setAffCity",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java/run",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java/run",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IRedisDataStructureService.java/pushLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IRedisDataStructureService.java/popLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IRedisDataStructureService.java/sizeLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IRedisDataStructureService.java/allLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IUserService.java/getName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/pushLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/popLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/sizeLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java/allLink",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java/getName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/push",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/pop",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/size",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java/all",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/greet",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/getName",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java/getDomain",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java/consumerLoanHandle"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "LOGGER",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "password",
+                            "type": "String"
+                        },
+                        {
+                            "name": "timeout",
+                            "type": "int"
+                        },
+                        {
+                            "name": "maxTotal",
+                            "type": "int"
+                        },
+                        {
+                            "name": "maxIdle",
+                            "type": "int"
+                        },
+                        {
+                            "name": "minIdle",
+                            "type": "int"
+                        },
+                        {
+                            "name": "maxWaitMillis",
+                            "type": "long"
+                        },
+                        {
+                            "name": "numTestsPerEvictionRun",
+                            "type": "int"
+                        },
+                        {
+                            "name": "timeBetweenEvictionRunsMillis",
+                            "type": "long"
+                        },
+                        {
+                            "name": "minEvictableIdleTimeMillis",
+                            "type": "long"
+                        },
+                        {
+                            "name": "softMinEvictableIdleTimeMillis",
+                            "type": "long"
+                        },
+                        {
+                            "name": "testOnBorrow",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "testWhileIdle",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "testOnReturn",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "blockWhenExhausted",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "expireTime",
+                            "type": "int"
+                        },
+                        {
+                            "name": "clusterHosts",
+                            "type": "String"
+                        },
+                        {
+                            "name": "clusterPorts",
+                            "type": "String"
+                        },
+                        {
+                            "name": "maxRedirects",
+                            "type": "int"
+                        },
+                        {
+                            "name": "usePool",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "appNo",
+                            "type": "String"
+                        },
+                        {
+                            "name": "contractLmt",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "interestRate",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "productName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "productCd",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderLmtAmt",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "bankCode",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCardNo",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCellPhone",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCustName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCustId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        },
+                        {
+                            "name": "cellPhone",
+                            "type": "String"
+                        },
+                        {
+                            "name": "idNo",
+                            "type": "String"
+                        },
+                        {
+                            "name": "loanTerm",
+                            "type": "int"
+                        },
+                        {
+                            "name": "affProvince",
+                            "type": "String"
+                        },
+                        {
+                            "name": "affCity",
+                            "type": "String"
+                        },
+                        {
+                            "name": "LOGGER",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "serialVersionUID",
+                            "type": "long"
+                        },
+                        {
+                            "name": "LOGGER",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "redisHost",
+                            "type": "String"
+                        },
+                        {
+                            "name": "LOGGER",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "template",
+                            "type": "RedisTemplate<String, String>"
+                        },
+                        {
+                            "name": "listOps",
+                            "type": "ListOperations<String, String>"
+                        },
+                        {
+                            "name": "LOGGER",
+                            "type": "Logger"
+                        },
+                        {
+                            "name": "userDao",
+                            "type": "IUserDao"
+                        },
+                        {
+                            "name": "redisDataStructureService",
+                            "type": "IRedisDataStructureService"
+                        },
+                        {
+                            "name": "userService",
+                            "type": "IUserService"
+                        },
+                        {
+                            "name": "domain",
+                            "type": "DomainTest"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "app",
+                            "type": "SpringApplication"
+                        },
+                        {
+                            "name": "cacheManager",
+                            "type": "RedisCacheManager"
+                        },
+                        {
+                            "name": "redisTemplate",
+                            "type": "RedisTemplate<String, String>"
+                        },
+                        {
+                            "name": "connectionFactory",
+                            "type": "JedisConnectionFactory"
+                        },
+                        {
+                            "name": "str",
+                            "type": "String"
+                        },
+                        {
+                            "name": "jedisPoolConfig",
+                            "type": "JedisPoolConfig"
+                        },
+                        {
+                            "name": "hosts",
+                            "type": "String"
+                        },
+                        {
+                            "name": "portArray",
+                            "type": "String"
+                        },
+                        {
+                            "name": "redisNodes",
+                            "type": "Set<RedisNode>"
+                        },
+                        {
+                            "name": "ports",
+                            "type": "String"
+                        },
+                        {
+                            "name": "hostPorts",
+                            "type": "String"
+                        },
+                        {
+                            "name": "node",
+                            "type": "RedisNode"
+                        },
+                        {
+                            "name": "redisClusterConfiguration",
+                            "type": "RedisClusterConfiguration"
+                        },
+                        {
+                            "name": "debug",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "files",
+                            "type": "List<String>"
+                        },
+                        {
+                            "name": "attributeName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "attributeValue",
+                            "type": "String"
+                        },
+                        {
+                            "name": "session",
+                            "type": "HttpSession"
+                        },
+                        {
+                            "name": "attrs",
+                            "type": "Enumeration<String>"
+                        },
+                        {
+                            "name": "sessionAttrValues",
+                            "type": "Map<String, String>"
+                        },
+                        {
+                            "name": "sessionName",
+                            "type": "String"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "redisTemplate",
+                            "type": "RedisTemplate<String, String>"
+                        },
+                        {
+                            "name": "cf",
+                            "type": "RedisConnectionFactory"
+                        },
+                        {
+                            "name": "redisSerializer",
+                            "type": "RedisSerializer"
+                        },
+                        {
+                            "name": "redisClusterConfig",
+                            "type": "RedisClusterConfiguration"
+                        },
+                        {
+                            "name": "jedisPoolConfig",
+                            "type": "JedisPoolConfig"
+                        },
+                        {
+                            "name": "t",
+                            "type": "Object"
+                        },
+                        {
+                            "name": "bytes",
+                            "type": "byte"
+                        },
+                        {
+                            "name": "appNo",
+                            "type": "String"
+                        },
+                        {
+                            "name": "contractLmt",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "interestRate",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "productName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "productCd",
+                            "type": "String"
+                        },
+                        {
+                            "name": "orderLmtAmt",
+                            "type": "BigDecimal"
+                        },
+                        {
+                            "name": "bankCode",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCardNo",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCellPhone",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCustName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "bankCustId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "gender",
+                            "type": "String"
+                        },
+                        {
+                            "name": "cellPhone",
+                            "type": "String"
+                        },
+                        {
+                            "name": "idNo",
+                            "type": "String"
+                        },
+                        {
+                            "name": "loanTerm",
+                            "type": "int"
+                        },
+                        {
+                            "name": "affProvince",
+                            "type": "String"
+                        },
+                        {
+                            "name": "affCity",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "ApplicationArguments"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "message",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "message",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "message",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "req",
+                            "type": "HttpServletRequest"
+                        },
+                        {
+                            "name": "resp",
+                            "type": "HttpServletResponse"
+                        },
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "loanInfo",
+                            "type": "ConsumerLoanInfo"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\readme.txt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\session\u5171\u4eab.docx",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\\u5e38\u7528\u6ce8\u89e3.txt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\Application.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\config\\RedisConfig.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\IUserDao.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\dao\\impl\\UserDaoImpl.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\ConsumerLoanInfo.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\DomainTest.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\domain\\MyBean.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\exception\\LocalException.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\DaoSomethingAfterAppStart2.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\init\\readme.txt",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IRedisDataStructureService.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\IUserService.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\RedisDataStructureServiceImpl.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\service\\impl\\UserServiceImpl.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SpringRestTemplateController.java",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\resources\\logback.xml",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\resources\\redis\\redis.properties",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\resources\\test\\test.properties",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\webapp\\jsp\\index.jsp",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\webapp\\META-INF\\MANIFEST.MF",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\test\\java\\com\\yzb\\lee\\springsession\\SpringRestTemplateTest.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 5,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java",
+                                "line": 20,
+                                "method": "POST",
+                                "code": "@RequestMapping(value={\"/push\"}, method=RequestMethod.POST)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java",
+                                "line": 25,
+                                "method": "POST",
+                                "code": "@RequestMapping(value={\"/pop\"}, method=RequestMethod.POST)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java",
+                                "line": 30,
+                                "method": "POST",
+                                "code": "@RequestMapping(value={\"/size\"}, method=RequestMethod.POST)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\RedisDataStructureController.java",
+                                "line": 35,
+                                "method": "POST",
+                                "code": "@RequestMapping(value={\"/all\"}, method=RequestMethod.POST)"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\java\\com\\yzb\\lee\\springsession\\web\\SampleController.java",
+                                "line": 50,
+                                "method": "POST",
+                                "code": "@RequestMapping(value={\"/name\"}, method=RequestMethod.POST)"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "Application.java",
+                                "className": "Application",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "cacheManager",
+                                "returnType": "CacheManager"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "returnType": "RedisTemplate"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "connectionFactory",
+                                "returnType": "JedisConnectionFactory"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisSerializer",
+                                "returnType": "RedisSerializer"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "jedisPoolConfig",
+                                "returnType": "JedisPoolConfig"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "jedisClusterConfiguration",
+                                "returnType": "RedisClusterConfiguration"
+                            },
+                            {
+                                "fileName": "UserDaoImpl.java",
+                                "className": "UserDaoImpl",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getAppNo",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setAppNo",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getContractLmt",
+                                "returnType": "BigDecimal"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setContractLmt",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getInterestRate",
+                                "returnType": "BigDecimal"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setInterestRate",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getProductName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setProductName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getProductCd",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setProductCd",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getOrderLmtAmt",
+                                "returnType": "BigDecimal"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setOrderLmtAmt",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getBankCode",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCode",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getBankName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getBankCardNo",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCardNo",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getBankCellPhone",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCellPhone",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getBankCustName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCustName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getBankCustId",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCustId",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getGender",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setGender",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getCellPhone",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setCellPhone",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "getIdNo",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setIdNo",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "DomainTest.java",
+                                "className": "DomainTest",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "DomainTest.java",
+                                "className": "DomainTest",
+                                "methodName": "setName",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "DomainTest.java",
+                                "className": "DomainTest",
+                                "methodName": "getPassword",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "DomainTest.java",
+                                "className": "DomainTest",
+                                "methodName": "setPassword",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "DaoSomethingAfterAppStart.java",
+                                "className": "DaoSomethingAfterAppStart",
+                                "methodName": "run",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "DaoSomethingAfterAppStart2.java",
+                                "className": "DaoSomethingAfterAppStart2",
+                                "methodName": "run",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "UserServiceImpl.java",
+                                "className": "UserServiceImpl",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "SampleController.java",
+                                "className": "SampleController",
+                                "methodName": "greet",
+                                "returnType": "Map"
+                            },
+                            {
+                                "fileName": "SampleController.java",
+                                "className": "SampleController",
+                                "methodName": "getName",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "SampleController.java",
+                                "className": "SampleController",
+                                "methodName": "getDomain",
+                                "returnType": "DomainTest"
+                            },
+                            {
+                                "fileName": "SpringRestTemplateController.java",
+                                "className": "SpringRestTemplateController",
+                                "methodName": "consumerLoanHandle",
+                                "returnType": "String"
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "queryConsumerLoan",
+                                "returnType": "ConsumerLoanInfo"
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "doPush",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "generic_return_types": [
+                                    "String",
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "SampleController.java",
+                                "className": "SampleController",
+                                "methodName": "greet",
+                                "generic_return_types": [
+                                    "String",
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "Application.java",
+                                "className": "Application",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "cacheManager",
+                                "param_types": [
+                                    "RedisTemplate"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "param_types": [
+                                    "RedisConnectionFactory",
+                                    "RedisSerializer"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "connectionFactory",
+                                "param_types": [
+                                    "RedisClusterConfiguration",
+                                    "JedisPoolConfig"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setAppNo",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setContractLmt",
+                                "param_types": [
+                                    "BigDecimal"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setInterestRate",
+                                "param_types": [
+                                    "BigDecimal"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setProductName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setProductCd",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setOrderLmtAmt",
+                                "param_types": [
+                                    "BigDecimal"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCode",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCardNo",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCellPhone",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCustName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setBankCustId",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setGender",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setCellPhone",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ConsumerLoanInfo.java",
+                                "className": "ConsumerLoanInfo",
+                                "methodName": "setIdNo",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "DomainTest.java",
+                                "className": "DomainTest",
+                                "methodName": "setName",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "DomainTest.java",
+                                "className": "DomainTest",
+                                "methodName": "setPassword",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "DaoSomethingAfterAppStart.java",
+                                "className": "DaoSomethingAfterAppStart",
+                                "methodName": "run",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "DaoSomethingAfterAppStart2.java",
+                                "className": "DaoSomethingAfterAppStart2",
+                                "methodName": "run",
+                                "param_types": [
+                                    "ApplicationArguments"
+                                ]
+                            },
+                            {
+                                "fileName": "UserServiceImpl.java",
+                                "className": "UserServiceImpl",
+                                "methodName": "getName",
+                                "param_types": [
+                                    "int"
+                                ]
+                            },
+                            {
+                                "fileName": "SampleController.java",
+                                "className": "SampleController",
+                                "methodName": "greet",
+                                "param_types": [
+                                    "HttpServletRequest",
+                                    "HttpServletResponse"
+                                ]
+                            },
+                            {
+                                "fileName": "SampleController.java",
+                                "className": "SampleController",
+                                "methodName": "getName",
+                                "param_types": [
+                                    "int"
+                                ]
+                            },
+                            {
+                                "fileName": "SpringRestTemplateController.java",
+                                "className": "SpringRestTemplateController",
+                                "methodName": "consumerLoanHandle",
+                                "param_types": [
+                                    "ConsumerLoanInfo"
+                                ]
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "doPush",
+                                "param_types": [
+                                    "ConsumerLoanInfo"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "Application.java",
+                                "className": "Application",
+                                "methodName": "main",
+                                "local_types": [
+                                    "SpringApplication"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "cacheManager",
+                                "local_types": [
+                                    "RedisCacheManager"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "local_types": [
+                                    "RedisTemplate"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "connectionFactory",
+                                "local_types": [
+                                    "JedisConnectionFactory"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "jedisPoolConfig",
+                                "local_types": [
+                                    "JedisPoolConfig"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "jedisClusterConfiguration",
+                                "local_types": [
+                                    "String",
+                                    "String",
+                                    "Set",
+                                    "RedisClusterConfiguration"
+                                ]
+                            },
+                            {
+                                "fileName": "SampleController.java",
+                                "className": "SampleController",
+                                "methodName": "greet",
+                                "local_types": [
+                                    "String",
+                                    "String",
+                                    "HttpSession",
+                                    "Enumeration",
+                                    "Map"
+                                ]
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "main",
+                                "local_types": [
+                                    "ConsumerLoanInfo"
+                                ]
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "queryConsumerLoan",
+                                "local_types": [
+                                    "ConsumerLoanInfo"
+                                ]
+                            },
+                            {
+                                "fileName": "SpringRestTemplateTest.java",
+                                "className": "SpringRestTemplateTest",
+                                "methodName": "doPush",
+                                "local_types": [
+                                    "AsyncRestTemplate",
+                                    "HttpEntity",
+                                    "ListenableFuture"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\resources\\application.properties",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\resources\\redis\\redis.properties",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/spring-session2-master\\src\\main\\resources\\logback.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": [
+            "src"
+        ]
+    }
+}

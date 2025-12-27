@@ -1,0 +1,876 @@
+{
+    "system": {
+        "folders": [
+            "gradle",
+            "src"
+        ],
+        "dependencies": [
+            "spring-boot-starter-data-jpa",
+            "spring-boot-starter-web",
+            "spring-boot-starter-data-redis",
+            "lombok",
+            "mapstruct",
+            "commons-pool2",
+            "mapstruct-processor",
+            "springdoc-openapi-starter-webmvc-ui",
+            "lombok",
+            "spring-boot-starter-test"
+        ],
+        "language": "",
+        "config_files": [
+            "G:\\AntiPattern_Detection\\projects\\RedisArchitecture-master\\gradle\\wrapper\\gradle-wrapper.properties"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "28",
+                "locs": "748",
+                "dependencies": [
+                    "spring-boot-starter-data-jpa",
+                    "spring-boot-starter-web",
+                    "spring-boot-starter-data-redis",
+                    "lombok",
+                    "mapstruct",
+                    "commons-pool2",
+                    "mapstruct-processor",
+                    "springdoc-openapi-starter-webmvc-ui",
+                    "lombok",
+                    "spring-boot-starter-test"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "RedisArchitectureApplication",
+                            "src.main.com.mft.redisarchitecture.RedisArchitectureApplication"
+                        ],
+                        [
+                            "RedisConfig",
+                            "src.main.com.mft.redisarchitecture.config.RedisConfig"
+                        ],
+                        [
+                            "BookController",
+                            "src.main.com.mft.redisarchitecture.controller.BookController"
+                        ],
+                        [
+                            "AuthRQ",
+                            "src.main.com.mft.redisarchitecture.dto.request.AuthRQ"
+                        ],
+                        [
+                            "BookRQ",
+                            "src.main.com.mft.redisarchitecture.dto.request.BookRQ"
+                        ],
+                        [
+                            "AuthRS",
+                            "src.main.com.mft.redisarchitecture.dto.response.AuthRS"
+                        ],
+                        [
+                            "BookRS",
+                            "src.main.com.mft.redisarchitecture.dto.response.BookRS"
+                        ],
+                        [
+                            "Auth",
+                            "src.main.com.mft.redisarchitecture.entity.Auth"
+                        ],
+                        [
+                            "Book",
+                            "src.main.com.mft.redisarchitecture.entity.Book"
+                        ],
+                        [
+                            "AppException",
+                            "src.main.com.mft.redisarchitecture.exception.AppException"
+                        ],
+                        [
+                            "GlobalExceptionHandler",
+                            "src.main.com.mft.redisarchitecture.exception.GlobalExceptionHandler"
+                        ],
+                        [
+                            "BookDto",
+                            "src.main.com.mft.redisarchitecture.mapper.BookDto"
+                        ],
+                        [
+                            "BookService",
+                            "src.main.com.mft.redisarchitecture.service.BookService"
+                        ],
+                        [
+                            "RedisArchitectureApplicationTests",
+                            "src.test.com.mft.redisarchitecture.RedisArchitectureApplicationTests"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/com.mft.redisarchitecture.entity.Book",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/com.mft.redisarchitecture.repository.BookRepository",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/jakarta.annotation.PostConstruct",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/org.springframework.beans.factory.annotation.Autowired",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/org.springframework.boot.SpringApplication",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/org.springframework.boot.autoconfigure.SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.beans.factory.annotation.Value",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.cache.annotation.EnableCaching",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.context.annotation.Bean",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.context.annotation.Configuration",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.data.redis.connection.RedisConnectionFactory",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.data.redis.connection.RedisStandaloneConfiguration",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.data.redis.connection.lettuce.LettucePoolingClientConfiguration",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.data.redis.core.RedisTemplate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.springframework.data.redis.serializer.StringRedisSerializer",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/io.lettuce.core.ClientOptions",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/io.lettuce.core.TimeoutOptions",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/org.apache.commons.pool2.impl.GenericObjectPoolConfig",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/java.time.Duration",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/com.mft.redisarchitecture.dto.request.BookRQ",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/com.mft.redisarchitecture.dto.response.BookRS",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/com.mft.redisarchitecture.service.BookService",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/lombok.RequiredArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/org.springframework.http.ResponseEntity",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/org.springframework.web.bind.annotation",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\AuthRQ.java/lombok.AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\AuthRQ.java/lombok.Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\AuthRQ.java/lombok.NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/lombok.AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/lombok.Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/lombok.NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/lombok.ToString",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java/lombok.AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java/lombok.Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java/lombok.NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java/java.time.LocalDate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/jakarta.persistence.Column",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/lombok",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/java.io.Serializable",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/java.time.LocalDate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/jakarta.persistence",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/lombok.Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/lombok.Setter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/java.time.LocalDate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/jakarta.persistence",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/lombok.AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/lombok.Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/lombok.NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/lombok.Setter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/java.time.LocalDate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/lombok.AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/lombok.Builder",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/lombok.Data",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/org.springframework.http.HttpStatus",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/org.springframework.http.ResponseEntity",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/org.springframework.web.bind.annotation.ExceptionHandler",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/org.springframework.web.bind.annotation.RestControllerAdvice",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookDto.java/lombok.Value",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookDto.java/java.io.Serializable",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookDto.java/java.time.LocalDate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/com.mft.redisarchitecture.dto.response.BookRS",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/com.mft.redisarchitecture.entity.Book",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/org.mapstruct",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\AuthRepository.java/com.mft.redisarchitecture.entity.Auth",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\AuthRepository.java/org.springframework.data.jpa.repository.JpaRepository",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/com.mft.redisarchitecture.entity.Book",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/org.springframework.data.jpa.repository.JpaRepository",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/org.springframework.data.jpa.repository.Query",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/org.springframework.data.repository.query.Param",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/com.mft.redisarchitecture.dto.request.BookRQ",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/com.mft.redisarchitecture.dto.response.BookRS",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/com.mft.redisarchitecture.entity.Book",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/com.mft.redisarchitecture.exception.AppException",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/com.mft.redisarchitecture.mapper.BookMapper",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/com.mft.redisarchitecture.repository.BookRepository",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/lombok.RequiredArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/org.springframework.cache.annotation.CacheEvict",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/org.springframework.cache.annotation.Cacheable",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/org.springframework.stereotype.Service",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/java.util.List",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/java.util.concurrent.TimeUnit",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/java.util.stream.Collectors"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/SpringBootApplication",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/Configuration",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/EnableCaching",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/Value",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/Bean",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/RequestMapping",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/RequiredArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/RestController",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/PostMapping",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/RequestBody",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/GetMapping",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/RequestParam",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\AuthRQ.java/Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\AuthRQ.java/AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\AuthRQ.java/NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/ToString",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java/NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java/Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java/AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java/NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/Setter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/ToString",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java/NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/Setter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/Entity",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/Table",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/Id",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/GeneratedValue",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java/Column",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/Getter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/Setter",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/Entity",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/NoArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/Table",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/Id",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/GeneratedValue",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java/Column",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/RestControllerAdvice",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/ExceptionHandler",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/Data",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/AllArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookDto.java/Value",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/Mapper",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/BeanMapping",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/MappingTarget",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/Query",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/Param",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/Service",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/RequiredArgsConstructor",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/Cacheable",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/CacheEvict"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java/main",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/redisConnectionFactory",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java/redisTemplate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/createBook",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/getBook",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java/listBook",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java/handleAppException",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/toEntity",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/toDto",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java/partialUpdate",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java/findBooks",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/getBook",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/createBook",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java/listBook"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "redisHost",
+                            "type": "String"
+                        },
+                        {
+                            "name": "redisPort",
+                            "type": "int"
+                        },
+                        {
+                            "name": "timeout",
+                            "type": "Duration"
+                        },
+                        {
+                            "name": "bookService",
+                            "type": "BookService"
+                        },
+                        {
+                            "name": "password",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "username",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "author",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pageCount",
+                            "type": "int"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "age",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "birthdate",
+                            "type": "LocalDate"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "password",
+                            "type": "String"
+                        },
+                        {
+                            "name": "surname",
+                            "type": "String"
+                        },
+                        {
+                            "name": "username",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "author",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pageCount",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "releaseeDate",
+                            "type": "LocalDate"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "age",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "birthdate",
+                            "type": "LocalDate"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "password",
+                            "type": "String"
+                        },
+                        {
+                            "name": "surname",
+                            "type": "String"
+                        },
+                        {
+                            "name": "username",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "author",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pageCount",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "releaseDate",
+                            "type": "LocalDate"
+                        },
+                        {
+                            "name": "message",
+                            "type": "String"
+                        },
+                        {
+                            "name": "errorCode",
+                            "type": "int"
+                        },
+                        {
+                            "name": "errorCode",
+                            "type": "int"
+                        },
+                        {
+                            "name": "message",
+                            "type": "String"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "author",
+                            "type": "String"
+                        },
+                        {
+                            "name": "name",
+                            "type": "String"
+                        },
+                        {
+                            "name": "pageCount",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "releaseDate",
+                            "type": "LocalDate"
+                        },
+                        {
+                            "name": "bookRepository",
+                            "type": "BookRepository"
+                        },
+                        {
+                            "name": "bookMapper",
+                            "type": "BookMapper"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "redisConfig",
+                            "type": "RedisStandaloneConfiguration"
+                        },
+                        {
+                            "name": "clientOptions",
+                            "type": "ClientOptions"
+                        },
+                        {
+                            "name": "lettucePoolConfig",
+                            "type": "LettucePoolingClientConfiguration"
+                        },
+                        {
+                            "name": "template",
+                            "type": "RedisTemplate<String, Object>"
+                        },
+                        {
+                            "name": "response",
+                            "type": "ErrorResponse"
+                        },
+                        {
+                            "name": "book",
+                            "type": "Book"
+                        },
+                        {
+                            "name": "book",
+                            "type": "Book"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "connectionFactory",
+                            "type": "RedisConnectionFactory"
+                        },
+                        {
+                            "name": "dto",
+                            "type": "BookRQ"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "adet",
+                            "type": "int"
+                        },
+                        {
+                            "name": "ex",
+                            "type": "AppException"
+                        },
+                        {
+                            "name": "bookDto",
+                            "type": "BookRS"
+                        },
+                        {
+                            "name": "book",
+                            "type": "Book"
+                        },
+                        {
+                            "name": "bookDto",
+                            "type": "BookRS"
+                        },
+                        {
+                            "name": "book",
+                            "type": "Book"
+                        },
+                        {
+                            "name": "adet",
+                            "type": "int"
+                        },
+                        {
+                            "name": "id",
+                            "type": "Long"
+                        },
+                        {
+                            "name": "bookRQ",
+                            "type": "BookRQ"
+                        },
+                        {
+                            "name": "adet",
+                            "type": "int"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [
+                            "localhost:5444/redis"
+                        ],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\.gitattributes",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\.gitignore",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\build.gradle",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\gradlew",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\gradlew.bat",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\README.md",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\README_EN.md",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\README_TR.md",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\settings.gradle",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\gradle\\wrapper\\gradle-wrapper.jar",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\gradle\\wrapper\\gradle-wrapper.properties",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplication.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\config\\RedisConfig.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\AuthRQ.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\request\\BookRQ.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\AuthRS.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\dto\\response\\BookRS.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Auth.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\entity\\Book.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\AppException.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\exception\\GlobalExceptionHandler.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookDto.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\mapper\\BookMapper.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\AuthRepository.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\repository\\BookRepository.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\BookService.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\service\\RedisCacheService.java",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\resources\\application.yml",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\test\\java\\com\\mft\\redisarchitecture\\RedisArchitectureApplicationTests.java"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 3,
+                        "apis": [
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java",
+                                "line": 19,
+                                "method": "POST",
+                                "code": "@PostMapping(\"/create\")"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java",
+                                "line": 25,
+                                "method": "GET",
+                                "code": "@GetMapping(\"/get\")"
+                            },
+                            {
+                                "file": "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\java\\com\\mft\\redisarchitecture\\controller\\BookController.java",
+                                "line": 30,
+                                "method": "GET",
+                                "code": "@GetMapping(\"/list\")"
+                            }
+                        ]
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "RedisArchitectureApplication.java",
+                                "className": "RedisArchitectureApplication",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisConnectionFactory",
+                                "returnType": "LettuceConnectionFactory"
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "returnType": "RedisTemplate"
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "createBook",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "getBook",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "listBook",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "GlobalExceptionHandler.java",
+                                "className": "GlobalExceptionHandler",
+                                "methodName": "handleAppException",
+                                "returnType": "ResponseEntity"
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "getBook",
+                                "returnType": "BookRS"
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "createBook",
+                                "returnType": "BookRS"
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "listBook",
+                                "returnType": "List"
+                            },
+                            {
+                                "fileName": "RedisArchitectureApplicationTests.java",
+                                "className": "RedisArchitectureApplicationTests",
+                                "methodName": "contextLoads",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "generic_return_types": [
+                                    "String",
+                                    "Object"
+                                ]
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "createBook",
+                                "generic_return_types": [
+                                    "BookRS"
+                                ]
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "getBook",
+                                "generic_return_types": [
+                                    "BookRS"
+                                ]
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "listBook",
+                                "generic_return_types": [
+                                    "List"
+                                ]
+                            },
+                            {
+                                "fileName": "GlobalExceptionHandler.java",
+                                "className": "GlobalExceptionHandler",
+                                "methodName": "handleAppException",
+                                "generic_return_types": [
+                                    "ErrorResponse"
+                                ]
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "listBook",
+                                "generic_return_types": [
+                                    "BookRS"
+                                ]
+                            }
+                        ],
+                        "methodParamType": [
+                            {
+                                "fileName": "RedisArchitectureApplication.java",
+                                "className": "RedisArchitectureApplication",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "param_types": [
+                                    "RedisConnectionFactory"
+                                ]
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "createBook",
+                                "param_types": [
+                                    "BookRQ"
+                                ]
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "getBook",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "BookController.java",
+                                "className": "BookController",
+                                "methodName": "listBook",
+                                "param_types": [
+                                    "int"
+                                ]
+                            },
+                            {
+                                "fileName": "GlobalExceptionHandler.java",
+                                "className": "GlobalExceptionHandler",
+                                "methodName": "handleAppException",
+                                "param_types": [
+                                    "AppException"
+                                ]
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "getBook",
+                                "param_types": [
+                                    "Long"
+                                ]
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "createBook",
+                                "param_types": [
+                                    "BookRQ"
+                                ]
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "listBook",
+                                "param_types": [
+                                    "int"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisConnectionFactory",
+                                "local_types": [
+                                    "RedisStandaloneConfiguration",
+                                    "ClientOptions",
+                                    "LettucePoolingClientConfiguration"
+                                ]
+                            },
+                            {
+                                "fileName": "RedisConfig.java",
+                                "className": "RedisConfig",
+                                "methodName": "redisTemplate",
+                                "local_types": [
+                                    "RedisTemplate"
+                                ]
+                            },
+                            {
+                                "fileName": "GlobalExceptionHandler.java",
+                                "className": "GlobalExceptionHandler",
+                                "methodName": "handleAppException",
+                                "local_types": [
+                                    "ErrorResponse"
+                                ]
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "getBook",
+                                "local_types": [
+                                    "Book"
+                                ]
+                            },
+                            {
+                                "fileName": "BookService.java",
+                                "className": "BookService",
+                                "methodName": "createBook",
+                                "local_types": [
+                                    "Book"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\gradle\\wrapper\\gradle-wrapper.properties",
+                        "G:/AntiPattern_Detection/projects/RedisArchitecture-master\\src\\main\\resources\\application.yml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": [
+            "src"
+        ]
+    }
+}

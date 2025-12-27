@@ -1,0 +1,693 @@
+{
+    "system": {
+        "folders": [
+            "data",
+            "src",
+            "target"
+        ],
+        "dependencies": [
+            "camel-core",
+            "slf4j-simple",
+            "camel-stream",
+            "camel-jms",
+            "activemq-camel",
+            "activemq-pool",
+            "activemq-console",
+            "activemq-all"
+        ],
+        "language": "",
+        "config_files": [
+            "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\pom.xml"
+        ],
+        "http": [],
+        "microservices": [
+            {
+                "name": "root",
+                "language": {
+                    "Type": "java",
+                    "Percentage": "100.00"
+                },
+                "nb_files": "22",
+                "locs": "516",
+                "dependencies": [
+                    "camel-core",
+                    "slf4j-simple",
+                    "camel-stream",
+                    "camel-jms",
+                    "activemq-camel",
+                    "activemq-pool",
+                    "activemq-console",
+                    "activemq-all"
+                ],
+                "code": {
+                    "file uris": [
+                        [
+                            {
+                                "service name": "root",
+                                "files": []
+                            }
+                        ]
+                    ],
+                    "class": [
+                        [
+                            "EIPContent",
+                            "src.main.EIPs.EIPContent"
+                        ],
+                        [
+                            "EIPContentFile",
+                            "src.main.EIPs.EIPContentFile"
+                        ],
+                        [
+                            "EIPContentInterceptor",
+                            "src.main.EIPs.EIPContentInterceptor"
+                        ],
+                        [
+                            "EIPDurable",
+                            "src.main.EIPs.EIPDurable"
+                        ],
+                        [
+                            "EIPMulticast",
+                            "src.main.EIPs.EIPMulticast"
+                        ],
+                        [
+                            "EIPRecipients",
+                            "src.main.EIPs.EIPRecipients"
+                        ],
+                        [
+                            "EIPRestful",
+                            "src.main.EIPs.EIPRestful"
+                        ],
+                        [
+                            "EIPSplit",
+                            "src.main.EIPs.EIPSplit"
+                        ],
+                        [
+                            "FileFileQueue",
+                            "src.main.EIPs.FileFileQueue"
+                        ],
+                        [
+                            "QueueConsole",
+                            "src.main.EIPs.QueueConsole"
+                        ],
+                        [
+                            "TimerConsole",
+                            "src.main.EIPs.TimerConsole"
+                        ],
+                        [
+                            "TransformBody",
+                            "src.main.EIPs.TransformBody"
+                        ],
+                        [
+                            "ReadFromQueue",
+                            "src.main.EIPTests.ReadFromQueue"
+                        ],
+                        [
+                            "SendToQueue",
+                            "src.main.EIPTests.SendToQueue"
+                        ]
+                    ],
+                    "imports": [
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContent.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContent.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContent.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentFile.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentFile.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentFile.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/org.apache.camel.Exchange",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/org.apache.camel.Processor",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPDurable.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPDurable.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPDurable.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPMulticast.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPMulticast.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPMulticast.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/org.apache.camel.Exchange",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/org.apache.camel.Processor",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPSplit.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPSplit.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPSplit.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\FileFileQueue.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\FileFileQueue.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\FileFileQueue.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/org.apache.activemq.camel.component.ActiveMQComponent",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/org.apache.camel.ProducerTemplate",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TimerConsole.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TimerConsole.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TimerConsole.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java/org.apache.camel.CamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java/org.apache.camel.ProducerTemplate",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java/org.apache.camel.builder.RouteBuilder",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java/org.apache.camel.impl.DefaultCamelContext",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java/org.apache.camel.impl.DefaultProducerTemplate"
+                    ],
+                    "annotations": [
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContent.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentFile.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPDurable.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPMulticast.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPSplit.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\FileFileQueue.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/Override",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TimerConsole.java/Override"
+                    ],
+                    "declared_annotations": [],
+                    "methods": [
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContent.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContent.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentFile.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentFile.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java/process",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPDurable.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPDurable.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPMulticast.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPMulticast.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java/process",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPSplit.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPSplit.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\FileFileQueue.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\FileFileQueue.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TimerConsole.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TimerConsole.java/configure",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java/main",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java/configure"
+                    ],
+                    "Fields": [
+                        {
+                            "name": "count",
+                            "type": "int"
+                        }
+                    ],
+                    "Local Variables": [
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "recipient",
+                            "type": "String"
+                        },
+                        {
+                            "name": "recipientQueue",
+                            "type": "String"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "template",
+                            "type": "ProducerTemplate"
+                        },
+                        {
+                            "name": "context",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "camelContext",
+                            "type": "CamelContext"
+                        },
+                        {
+                            "name": "template",
+                            "type": "ProducerTemplate"
+                        }
+                    ],
+                    "Method Parameters": [
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "exchange",
+                            "type": "Exchange"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        },
+                        {
+                            "name": "args",
+                            "type": "String"
+                        }
+                    ],
+                    "http": [],
+                    "databases": {
+                        "datasources": [],
+                        "create": []
+                    },
+                    "source_files": [
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\config_files.json",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\Design_Patterns.iml",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\exclude.txt",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\pom.xml",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\data\\inbox\\test.txt",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\data\\inbox\\.camel\\test.txt",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\data\\outbox\\another.txt",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\data\\outbox\\test.txt",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContent.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentFile.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPContentInterceptor.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPDurable.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPMulticast.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRecipients.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPRestful.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\EIPSplit.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\FileFileQueue.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\MainApp.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\QueueConsole.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TimerConsole.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPs\\TransformBody.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPTests\\ReadFromQueue.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\src\\main\\java\\EIPTests\\SendToQueue.java",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPContent$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPContent.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPContentFile$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPContentFile.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPContentInterceptor$1$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPContentInterceptor$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPContentInterceptor.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPDurable$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPDurable.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPMulticast$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPMulticast.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPRecipients$1$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPRecipients$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPRecipients.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPRestful.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPSplit$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\EIPSplit.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\FileFileQueue$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\FileFileQueue.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\QueueConsole.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\TimerConsole.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPs\\TransformBody.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPTests\\ReadFromQueue$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPTests\\ReadFromQueue.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPTests\\SendToQueue$1.class",
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\target\\classes\\EIPTests\\SendToQueue.class"
+                    ],
+                    "callgraph": [],
+                    "APIs": {
+                        "number": 0,
+                        "apis": []
+                    },
+                    "feature_method": {
+                        "methodReturnType": [
+                            {
+                                "fileName": "EIPContent.java",
+                                "className": "EIPContent",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "EIPContentFile.java",
+                                "className": "EIPContentFile",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "EIPContentInterceptor.java",
+                                "className": "EIPContentInterceptor",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "EIPDurable.java",
+                                "className": "EIPDurable",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "EIPMulticast.java",
+                                "className": "EIPMulticast",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "EIPRecipients.java",
+                                "className": "EIPRecipients",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "EIPSplit.java",
+                                "className": "EIPSplit",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "FileFileQueue.java",
+                                "className": "FileFileQueue",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "QueueConsole.java",
+                                "className": "QueueConsole",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "TimerConsole.java",
+                                "className": "TimerConsole",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "TransformBody.java",
+                                "className": "TransformBody",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "ReadFromQueue.java",
+                                "className": "ReadFromQueue",
+                                "methodName": "main",
+                                "returnType": "void"
+                            },
+                            {
+                                "fileName": "SendToQueue.java",
+                                "className": "SendToQueue",
+                                "methodName": "main",
+                                "returnType": "void"
+                            }
+                        ],
+                        "methodGenericReturnType": [],
+                        "methodParamType": [
+                            {
+                                "fileName": "EIPContent.java",
+                                "className": "EIPContent",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPContentFile.java",
+                                "className": "EIPContentFile",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPContentInterceptor.java",
+                                "className": "EIPContentInterceptor",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPDurable.java",
+                                "className": "EIPDurable",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPMulticast.java",
+                                "className": "EIPMulticast",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPRecipients.java",
+                                "className": "EIPRecipients",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPSplit.java",
+                                "className": "EIPSplit",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "FileFileQueue.java",
+                                "className": "FileFileQueue",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "QueueConsole.java",
+                                "className": "QueueConsole",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "TimerConsole.java",
+                                "className": "TimerConsole",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "TransformBody.java",
+                                "className": "TransformBody",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "ReadFromQueue.java",
+                                "className": "ReadFromQueue",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            },
+                            {
+                                "fileName": "SendToQueue.java",
+                                "className": "SendToQueue",
+                                "methodName": "main",
+                                "param_types": [
+                                    "String"
+                                ]
+                            }
+                        ],
+                        "methodLocalType": [
+                            {
+                                "fileName": "EIPContent.java",
+                                "className": "EIPContent",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPContentFile.java",
+                                "className": "EIPContentFile",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPContentInterceptor.java",
+                                "className": "EIPContentInterceptor",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPDurable.java",
+                                "className": "EIPDurable",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPMulticast.java",
+                                "className": "EIPMulticast",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPRecipients.java",
+                                "className": "EIPRecipients",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "EIPSplit.java",
+                                "className": "EIPSplit",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "FileFileQueue.java",
+                                "className": "FileFileQueue",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "QueueConsole.java",
+                                "className": "QueueConsole",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext",
+                                    "ProducerTemplate"
+                                ]
+                            },
+                            {
+                                "fileName": "TimerConsole.java",
+                                "className": "TimerConsole",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "TransformBody.java",
+                                "className": "TransformBody",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "ReadFromQueue.java",
+                                "className": "ReadFromQueue",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            },
+                            {
+                                "fileName": "SendToQueue.java",
+                                "className": "SendToQueue",
+                                "methodName": "main",
+                                "local_types": [
+                                    "CamelContext"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "config": {
+                    "config_files": [
+                        "G:/AntiPattern_Detection/projects/eip_design_patterns-master\\pom.xml"
+                    ]
+                },
+                "deployment": {
+                    "docker_files": [],
+                    "images": []
+                },
+                "env": {
+                    "env_files": []
+                }
+            }
+        ],
+        "GitRepository": "NAN",
+        "relations": [],
+        "reducedrelations": [],
+        "cycles": [],
+        "candidateMicroservices": [],
+        "selectedMicroservices": [],
+        "selectedMicroservicesV2": []
+    }
+}
