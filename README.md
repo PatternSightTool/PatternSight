@@ -43,7 +43,7 @@ If you find this dataset useful in your research, please consider citing our pub
 
 ## Author Profiles
 - LinkedIn: https://www.linkedin.com/in/neda-mohammadi/  
-- Google Scholar: [Your Google Scholar URL](https://scholar.google.com/citations?user=VvINdmsAAAAJ&hl=en)
+- Google Scholar: https://scholar.google.com/citations?user=VvINdmsAAAAJ&hl=en
 - ORCID: https://orcid.org/0000-0002-4949-3390
 
 
