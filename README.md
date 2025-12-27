@@ -53,8 +53,7 @@ For any questions, suggestions, or collaboration inquiries regarding this datase
 This repository is released under the **MIT License**. See the `LICENSE` file for details.
 
 
-<a href="http://www.clustrmaps.com/map/Github.com/PatternSightTool/PatternSight" title="Visit tracker for Github.com/PatternSightTool/PatternSight">
-  <img src="//www.clustrmaps.com/map_v2.png?d=15R4cir3GEg-GH0wTOyDcIAAUGjdFnMLYShB3ZjSTEA" />
-</a>
+[![Visitor Map](https://clustrmaps.com/map_v2.png?d=15R4cir3GEg-GH0wTOyDcIAAUGjdFnMLYShB3ZjSTEA)](https://clustrmaps.com/site/15R4cir3GEg-GH0wTOyDcIAAUGjdFnMLYShB3ZjSTEA)
+
 
 
