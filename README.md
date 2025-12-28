@@ -53,7 +53,3 @@ For any questions, suggestions, or collaboration inquiries regarding this datase
 This repository is released under the **MIT License**. See the `LICENSE` file for details.
 
 
-[![Visitor Map](https://clustrmaps.com/map_v2.png?d=15R4cir3GEg-GH0wTOyDcIAAUGjdFnMLYShB3ZjSTEA)](https://clustrmaps.com/site/15R4cir3GEg-GH0wTOyDcIAAUGjdFnMLYShB3ZjSTEA)
-
-
-
